@@ -40,10 +40,10 @@
         <nav>
             <div>
                 <ul>
-                    <li><a class="button white-text" href="index.html">Home</a></li>
-                    <li><a class="button white-text" href="accommodation.html">Accomodation</a></li>
-                    <li><a class="button white-text" href="rates.html">Rates</a></li>
-                    <li><a class="button button-primary white-text" href="contact.html">Contact Us</a></li>      
+                    <li><a class="button white-text" href="index.php">Home</a></li>
+                    <li><a class="button white-text" href="accommodation.php">Accomodation</a></li>
+                    <li><a class="button white-text" href="rates.php">Rates</a></li>
+                    <li><a class="button button-primary white-text" href="contact.php">Contact Us</a></li>      
                 </ul>
             </div>
         </nav>
