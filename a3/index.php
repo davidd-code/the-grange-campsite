@@ -1,52 +1,122 @@
 <!DOCTYPE html>
-<html lang='en'>
-  <head>
-    <meta charset="utf-8">
-    <title>Assignment 1</title>
+<html lang="en">
+    <head>
 
-    <!-- We will cover style later. Skip down to the body tag -->
-    <link type="text/css" rel="stylesheet" href="/~e54061/css/wireframe.css"/>
-    <style>
-  <style>
-    <?php
-      // This PHP code inserts CSS to style the "current page" link in the nav area
-      $here = $_SERVER['SCRIPT_NAME']; 
-      $bits = explode('/',$here); 
-      $filename = $bits[count($bits)-1]; 
-      echo "nav a[href$='$filename'] {
-      box-shadow: 1px 1px 1px 2px navy;
-    }";
-    ?>
-    
-  </style>
-  </head>
+        <!-- Basic Page Needs
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta charset="utf-8">
+        <title>The Grange | Welcome</title>
+        <meta name="description" content="Home Page">
+        <meta name="author" content="David Doan and Josh Miranda">
 
-  <body>
+        <!-- Mobile Specific Metas
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <header>
-      <div>Put company logo and name here</div>
+        <!-- FONT
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
+
+
+        <!-- CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/skeleton.css">
+        <link rel="stylesheet" href="style.css">
+
+        <!-- The Grange
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link rel="icon" type="image/png" href="../media/blacklogo.png">
+
+    </head>
+    <header class="background-image">
+	<a href="index.html">
+        	<img class="logo" src="../media/companyLogo.png" alt="Simplified fireplace with text saying the Grange under it">
+	</a>
+
+        <nav>
+            <div>
+                <ul>
+                    <li><a class="button button-primary white-text" href="index.html">Home</a></li>
+                    <li><a class="button white-text" href="accommodation.html">Accomodation</a></li>
+                    <li><a class="button white-text" href="rates.html">Rates</a></li>
+                    <li><a class="button white-text" href="contact.html">Contact Us</a></li>      
+                </ul>
+            </div>
+        </nav>
+        
     </header>
 
-    <nav>
-      <div>Put website navigation links here</div>
-    </nav>
+    <body class="dark-background">
 
-    <main>
-      <article id='Website Under Construction'>
-    <!-- Creative Commons image sourced from https://pixabay.com/en/maintenance-under-construction-2422173/ and used for educational purposes only -->
-        <img src='../media/website-under-construction.png' alt='Website Under Construction' />
-      </article>
-    </main>
+        <!-- Primary Page Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-    <footer>
-      <div>&copy;<script>
-        document.write(new Date().getFullYear());
-      </script> Put your name(s), student number(s) and group name here.</div>
-      <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
-      <div>Maintain links to your working <a href='../style-guide.php'>style guide</a>, your <a href='../products.txt'>products spreadsheet</a> and <a href='../orders.txt'>orders spreadsheet</a> here.</div>
+        <div class="light-background">
+		<div class="container">
+			<div class="column text-center">
+				<br><h3>Welcome to the Grange</h3>
+				<p class="text-center">
+				Sit back and relax while rembracing the beauty of nature in all of it's glory.
+				The Grange is a place where community meets tranquility, whether you want to get in touch with 
+				your adventurous side or if you are just seeking divine relaxation, we've got something for 
+				everyone here. Located along the beachfront in Portalington, the Grange is a 30 minute drive
+				from Geelong and about an hour and 30 minutes away from Melbourne CBD. For those who want to take
+				the scenic route, you can take a ferry straight to Portalington from Docklands and travel in style.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="three columns">
+				<img class="image-container" src="../media/caravan.png" alt="Simplified caravan logo">
+				<p>
+					Our caravan spaces are surrounded by wildlife, amongst wild drop bears, bats in the night
+					and people in the light. We are sure that you will have a unique adventure with every visit
+					to the Grange.
+				</p>
+			</div>
+			<div class="three columns">
+				<img class="image-container" src="../media/tent.png" alt="Simplifiedd tent logo">
+				<p>
+					We've got different sites for all sizes of families. With 5 different types of camping sites,
+					you're sure to find the perfect place for your family to stay.
+				</p>
+			</div>
+			<div class="three columns">
+				<img class="image-container" src="../media/hiking.png" alt="Logo of man hiking">
+				<p>
+					Enjoy 8 different hiking paths, we have challenges for all fitness levels. Hire boots, hiking
+					packs and more from our shop.
+				</p>
+			</div>
+			<div class="three columns">
+				<img class="image-container" src="../media/family.png" alt="Logo of family">
+				<p>
+					We pride ourselves in ensuring that our grounds are family friendly, we have playgrounds for 
+					the kids, soccer fields, basketball courts, mini golf, archery and various other activities
+					for everyone to enjoy.
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+        <!-- End Document
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    </body>
+    <footer class="white-text text-center">
+	    <div id="footer">
+		Created By David Doan #s3686810 and Joshua Miranda #3690595 <br>
+        	Check out the new logo that I created on LogoMakr.com 
+        	https://logomakr.com/68T8ti, https://logomakr.com/9ri0w2, <br>
+            https://logomakr.com/6D7mrw, https://logomakr.com/3MoZll, https://logomakr.com/0QmeW9<br>
+            Background image: Photo by Kara Michelle on Unsplash - https://unsplash.com/photos/a_Q8MzP3xR4
+	    </div>
     </footer>
-    
-
-  </body>
 
 </html>
