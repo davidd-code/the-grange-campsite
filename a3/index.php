@@ -1,60 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-
-        <!-- Basic Page Needs
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <meta charset="utf-8">
-        <title>The Grange | Welcome</title>
-        <meta name="description" content="Home Page">
-        <meta name="author" content="David Doan and Josh Miranda">
-
-        <!-- Mobile Specific Metas
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- FONT
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
-
-
-        <!-- CSS
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <link rel="stylesheet" href="../css/normalize.css">
-        <link rel="stylesheet" href="../css/skeleton.css">
-        <link rel="stylesheet" href="style.css">
-
-        <!-- The Grange
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <link rel="icon" type="image/png" href="../media/blacklogo.png">
-
-    </head>
-    <header class="background-image">
-	<a href="index.html">
-        	<img class="logo" src="../media/companyLogo.png" alt="Simplified fireplace with text saying the Grange under it">
-	</a>
-
+<?php
+    require_once("tools.php");
+    top_module("Welcome");
+?>
         <nav>
             <div>
                 <ul>
                     <li><a class="button button-primary white-text" href="index.php">Home</a></li>
                     <li><a class="button white-text" href="accommodation.php">Accomodation</a></li>
                     <li><a class="button white-text" href="rates.php">Rates</a></li>
-                    <li><a class="button white-text" href="contact.php">Contact Us</a></li>      
-                </ul>
-            </div>
-        </nav>
-        
+		    <li><a class="button white-text" href="contact.php">Contact Us</a></li>      
+		</ul>
+	    </div>
+	</nav>
+
     </header>
 
     <body class="dark-background">
 
-        <!-- Primary Page Layout
+	<!-- Primary Page Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-        <div class="light-background">
+	<div class="light-background">
 		<div class="container">
 			<div class="column text-center">
 				<br><h3>Welcome to the Grange</h3>
@@ -106,16 +72,16 @@
 	</div>
 
 
-        <!-- End Document
+	<!-- End Document
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     </body>
     <footer class="white-text text-center">
 	    <div id="footer">
 		Created By David Doan #s3686810 and Joshua Miranda #3690595 <br>
-        	Check out the new logo that I created on LogoMakr.com 
-        	https://logomakr.com/68T8ti, https://logomakr.com/9ri0w2, <br>
-            https://logomakr.com/6D7mrw, https://logomakr.com/3MoZll, https://logomakr.com/0QmeW9<br>
-            Background image: Photo by Kara Michelle on Unsplash - https://unsplash.com/photos/a_Q8MzP3xR4
+		Check out the new logo that I created on LogoMakr.com 
+		https://logomakr.com/68T8ti, https://logomakr.com/9ri0w2, <br>
+	    https://logomakr.com/6D7mrw, https://logomakr.com/3MoZll, https://logomakr.com/0QmeW9<br>
+	    Background image: Photo by Kara Michelle on Unsplash - https://unsplash.com/photos/a_Q8MzP3xR4
 	    </div>
     </footer>
 
