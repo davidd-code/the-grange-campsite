@@ -1,6 +1,6 @@
 <?php
     require_once("tools.php");
-    top_module("Contact Us");
+    top_module("Contact Us", "contact-background");
 ?>
 	<nav>
 	    <div>

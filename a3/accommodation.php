@@ -1,6 +1,6 @@
 <?php
     require_once("tools.php");
-    top_module("Accommodation");
+    top_module("Accommodation", "accommodation-background");
 ?>
 
 	<nav>

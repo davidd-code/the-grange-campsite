@@ -1,5 +1,5 @@
 <?php
-    function top_module($pageTitle) {
+    function top_module($pageTitle, $background) {
     $html = <<<"OUTPUT"
             <!DOCTYPE html>
             <html lang="en">
@@ -35,7 +35,7 @@
 
             </head>
             
-            <header class="background-image">
+            <header class=$background>
 	           <a href="index.html">
         	       <img class="logo" src="../media/companyLogo.png" alt="Simplified fireplace with text saying the Grange under it">
 	           </a>

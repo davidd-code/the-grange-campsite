@@ -1,6 +1,6 @@
 <?php
     require_once("tools.php");
-    top_module("Rates");
+    top_module("Rates", "rates-background");
 ?>
 	<nav>
 	    <div>
