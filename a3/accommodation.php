@@ -139,9 +139,9 @@ top_module("Accommodation", "accommodation-background", "", "button-primary", ""
 
             <input type="hidden" name="aid" id="aid" value=""/>
 
-            <p>Arrival Date:<br> <input class="form-width black-text" type="date" name="date" value="" required/></p>
+            <p>Arrival Date:<br> <input class="form-width black-text" type="date" name="date" value="" required onchange="calculatePrice()"></p>
             <p>Number of Days:<br> 
-                <select class="form-width black-text" name="days">
+                <select class="form-width black-text" name="days" id="days" required onchange="calculatePrice()">
                     <option disabled selected value>Please select</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -161,7 +161,7 @@ top_module("Accommodation", "accommodation-background", "", "button-primary", ""
             </p>
 
             <p>Number of Adults:<br>
-                <select class="form-width black-text"  name="adults" required>
+                <select class="form-width black-text"  name="adults" id="adults" required onchange="calculatePrice()">
                     <option disabled selected value>Please select</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -178,7 +178,7 @@ top_module("Accommodation", "accommodation-background", "", "button-primary", ""
 
 
             <p>Number of Children:<br>
-                <select class="form-width black-text" name="children" required>
+                <select class="form-width black-text" name="children" id="children" required onchange="calculatePrice()">
                     <option disabled selected value>Please select</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -193,11 +193,11 @@ top_module("Accommodation", "accommodation-background", "", "button-primary", ""
                 </select>
             </p>
 
-            <span>Total Price: $</span>
-            <span id="price"></span>
+            <span class="white-text">Total Price: $</span>
+            <span id="price" class="white-text"></span>
             <br>
-            <span>Includes GST: $</span>
-            <span id="GST"></span>
+            <span class="white-text">Includes GST: $</span>
+            <span id="GST" class="white-text"></span>
             
             <div><button id="submit-button" type="submit" value="submit" >Book</button></div>
         </form>
