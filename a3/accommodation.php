@@ -9,23 +9,23 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
     <div class="text-center">
-	<button onclick="sus()" class="white-text">Small Unpowered Site</button>
+	<button onclick="displaySmallUnpoweredSite()" class="white-text">Small Unpowered Site</button>
 
 
 
-	<button onclick="sps()" class="white-text">Small Powered Site</button>
+	<button onclick="displaySmallPoweredSite()" class="white-text">Small Powered Site</button>
 
 
 
-	<button onclick="mus()" class="white-text">Medium Unpowered Site</button>
+	<button onclick="displayMediumUnpoweredSite()" class="white-text">Medium Unpowered Site</button>
 
 
 
-	<button onclick="mps()" class="white-text">Medium Powered Site</button>
+	<button onclick="displayMediumPoweredSite()" class="white-text">Medium Powered Site</button>
 
 
 
-	<button onclick="cs()" class="white-text">Caravan Sites</button>
+	<button onclick="displayCaravanSite()" class="white-text">Caravan Sites</button>
     </div>
 
 

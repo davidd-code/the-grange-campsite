@@ -1,4 +1,4 @@
-function sus() {
+function displaySmallUnpoweredSite() {
 	var a = document.getElementById("sus");
 	var b = document.getElementById("sps");
 	var c = document.getElementById("mus");
@@ -16,8 +16,8 @@ function sus() {
 		e.style.display="none";
 	} else {
 		
-        f.style.display="none";	
-        a.style.display= "block";
+        f.style.display="block";	
+        a.style.display="none";
 		b.style.display="none";
 		c.style.display="none";
 		d.style.display="none";
@@ -25,7 +25,7 @@ function sus() {
 	}
 }
 
-function sps() {
+function displaySmallPoweredSite() {
 	var a = document.getElementById("sus");
 	var b = document.getElementById("sps");
 	var c = document.getElementById("mus");
@@ -42,8 +42,8 @@ function sps() {
 		e.style.display="none";
 	} else {
 		
-        f.style.display="none";	
-        b.style.display= "block";
+        f.style.display="block";	
+        b.style.display="none";
 		a.style.display="none";
 		c.style.display="none";
 		d.style.display="none";
@@ -51,7 +51,7 @@ function sps() {
 	}
 }
 
-function mus() {
+function displayMediumUnpoweredSite() {
 	var a = document.getElementById("sus");
 	var b = document.getElementById("sps");
 	var c = document.getElementById("mus");
@@ -68,8 +68,8 @@ function mus() {
 		e.style.display="none";
 	} else {
 	
-        f.style.display="none";	
-        c.style.display= "block";
+        f.style.display="block";	
+        c.style.display="none";
 		b.style.display="none";
 		a.style.display="none";
 		d.style.display="none";
@@ -77,7 +77,7 @@ function mus() {
 	}
 }
 
-function mps() {
+function displayMediumPoweredSite() {
 	var a = document.getElementById("sus");
 	var b = document.getElementById("sps");
 	var c = document.getElementById("mus");
@@ -94,8 +94,8 @@ function mps() {
 		e.style.display="none";
 	} else {
 		
-        f.style.display="none";	
-        d.style.display= "block";
+        f.style.display="block";	
+        d.style.display="none";
 		b.style.display="none";
 		c.style.display="none";
 		a.style.display="none";
@@ -103,7 +103,7 @@ function mps() {
 	}
 }
 
-function cs() {
+function displayCaravanSite() {
 	var a = document.getElementById("sus");
 	var b = document.getElementById("sps");
 	var c = document.getElementById("mus");
@@ -118,8 +118,8 @@ function cs() {
 		d.style.display="none";
 		a.style.display="none";
 	} else {
-		e.style.display= "block";
-        f.style.display="none";	
+		e.style.display="none";
+        f.style.display="block";	
 		b.style.display="none";
 		c.style.display="none";
 		d.style.display="none";
