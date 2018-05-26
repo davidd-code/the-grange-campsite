@@ -12,7 +12,7 @@ $_SESSION['booking'] => array (
         email =>$_POST['email'],
         phone =>$_POST['phone']
     )
-)
+);
 
 echo $_POST;
     
