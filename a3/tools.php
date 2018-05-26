@@ -66,6 +66,7 @@ OUTPUT;
         
 
                 </body>
+                <hr>
                 <footer class="white-text text-center">
                     <div id="footer">
                         Created By David Doan #s3686810 and Joshua Miranda #3690595 <br>
