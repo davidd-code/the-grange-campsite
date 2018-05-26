@@ -9,15 +9,15 @@ top_module("Accommodation", "accommodation-background", "", "button-primary", ""
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 <div class="text-center">
-    <button onclick="US()" class="white-text">Small Unpowered Site</button>
+    <button onclick="US(); calculatePrice()" class="white-text">Small Unpowered Site</button>
 
-    <button onclick="PS()" class="white-text">Small Powered Site</button>
+    <button onclick="PS(); calculatePrice()" class="white-text">Small Powered Site</button>
 
-    <button onclick="UM()" class="white-text">Medium Unpowered Site</button>
+    <button onclick="UM(); calculatePrice()" class="white-text">Medium Unpowered Site</button>
 
-    <button onclick="PM()" class="white-text">Medium Powered Site</button>
+    <button onclick="PM(); calculatePrice(); calculatePrice()" class="white-text">Medium Powered Site</button>
 
-    <button onclick="C()" class="white-text">Caravan Sites</button>
+    <button onclick="C(); calculatePrice()" class="white-text">Caravan Sites</button>
 </div>
 
 
