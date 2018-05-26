@@ -176,7 +176,7 @@ function calculatePrice()   {
     var pricePerDay = 0;
     var totalPrice = 0;
     var GST = 0;
-    
+    console.log(priceBook['sites'][aid.value]['additionalChildPrice']);
     if(priceBook['sites'][aid.value]['includedPerson'] > 0)    {
         if(totalPeople > priceBook.maxPerson)   {
             document.getElementById("error").innerHTML = "Maximum total number of people is 10";
@@ -200,6 +200,7 @@ function calculatePrice()   {
             }   else    {
                 pricePerDay += (adults - 2) * priceBook['sites'][aid.value]['additionalAdultPrice'];
                 pricePerDay += children * priceBook['sites'][aid.value]['additionalChildPrice'];
+                console.log(priceBook['sites'][aid.value]['additionalChildPrice']);
                 totalPrice = days * pricePerDay;
                 GST = totalPrice / 10;
                 document.getElementById("price").innerHTML = totalPrice;
