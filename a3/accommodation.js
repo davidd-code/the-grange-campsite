@@ -7,7 +7,7 @@ function sus() {
     var f = document.getElementById("landing");
 	
     if (a.style.display==="block") {
-        document.getElementById("aid").value = "accommodationid";
+        document.getElementById("aid").value = "";
         f.style.display="block";	
 		b.style.display="none"; 
         a.style.display="none";
@@ -33,7 +33,7 @@ function sps() {
 	var e = document.getElementById("cs"); 
     var f = document.getElementById("landing");
 	if (b.style.display==="block") {
-        document.getElementById("aid").value = "accommodationid";
+        document.getElementById("aid").value = "";
         f.style.display="block";	
 		a.style.display="none";
         b.style.display="none";
@@ -59,7 +59,7 @@ function mus() {
 	var e = document.getElementById("cs");
     var f = document.getElementById("landing");
 	if (c.style.display==="block") {
-        document.getElementById("aid").value = "accommodationid";
+        document.getElementById("aid").value = "";
         f.style.display="block";	
 		c.style.display="none";
 		a.style.display="none";
@@ -85,7 +85,7 @@ function mps() {
 	var e = document.getElementById("cs");
     var f = document.getElementById("landing");
 	if (d.style.display==="block") {
-        document.getElementById("aid").value = "accommodationid";
+        document.getElementById("aid").value = "";
         f.style.display="block";	
         d.style.display="none";
 		b.style.display="none";
@@ -111,7 +111,7 @@ function cs() {
 	var e = document.getElementById("cs");
     var f = document.getElementById("landing");
 	if (e.style.display==="block") {
-        document.getElementById("aid").value = "accommodationid";
+        document.getElementById("aid").value = "";
 		e.style.display="none";	
         f.style.display="block";	
         b.style.display="none";
@@ -129,7 +129,7 @@ function cs() {
 	}
 }
 
-var priceBook {
+var priceBook = {
     minAdult: 1,
     minChild: 0,
     maxPerson: 10,
