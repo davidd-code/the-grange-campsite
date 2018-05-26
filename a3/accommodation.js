@@ -267,7 +267,9 @@ function calculatePrice()   {
             break;
             
             case "":
-                document.getElementById("price").innerHTML = "Select one of the campsites with the buttons above.";
+                document.getElementById("error").innerHTML = "Select one of the campsites with the buttons above.";
+                document.getElementById("price").innerHTML = "N/A";
+                document.getElementById("GST").innerHTML = "N/A";
             return;
     }
     GST = price/10;
