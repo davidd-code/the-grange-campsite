@@ -41,7 +41,7 @@ function PS() {
         d.style.display="none";
         e.style.display="none";
     } else {
-        document.getElementById("aid").value = "UM";
+        document.getElementById("aid").value = "PS";
         f.style.display="none";	
         b.style.display="block";
         a.style.display="none";
@@ -67,7 +67,7 @@ function UM() {
         d.style.display="none";
         e.style.display="none";
     } else {
-        document.getElementById("aid").value = "PS";
+        document.getElementById("aid").value = "UM";
         f.style.display="none";	
         c.style.display="block";
         b.style.display="none";
