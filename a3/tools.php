@@ -66,9 +66,10 @@ OUTPUT;
         
 
                 </body>
-                <hr>
+                
                 <footer class="white-text text-center">
                     <div id="footer">
+                    <hr>
                         Created By David Doan #s3686810 and Joshua Miranda #3690595 <br>
                         Check out the new logo that I created on LogoMakr.com 
                         https://logomakr.com/68T8ti, https://logomakr.com/9ri0w2, <br>
