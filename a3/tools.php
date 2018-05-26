@@ -22,12 +22,15 @@
                     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
                     <link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
 
-
                 <!-- CSS
             –––––––––––––––––––––––––––––––––––––––––––––––––– -->
                     <link rel="stylesheet" href="../css/normalize.css">
                     <link rel="stylesheet" href="../css/skeleton.css">
                     <link rel="stylesheet" href="style.css">
+                    
+                <!-- JavaScript
+            –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+                    <script type="text/javascript" src="accommodation.js"></script>
 
                 <!-- The Grange
             –––––––––––––––––––––––––––––––––––––––––––––––––– -->
