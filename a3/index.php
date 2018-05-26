@@ -1,4 +1,6 @@
 <?php
+    session_start();
+
     require_once("tools.php");
     top_module("Welcome", "background-image", "button-primary", "", "", "");
 ?>

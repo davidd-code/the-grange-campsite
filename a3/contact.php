@@ -1,4 +1,6 @@
 <?php
+    session_start();
+
     require_once("tools.php");
     top_module("Contact Us", "contact-background", "", "", "", "button-primary");
 ?>
