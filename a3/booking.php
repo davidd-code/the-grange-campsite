@@ -14,7 +14,8 @@ $_SESSION['booking'] = array (
     )*/
 );
 
-echo $_POST;
+print_r($_SESSION);
+print_r($_POST);
     
 require_once("tools.php");
 top_module("Booking", "accommodation-background", "", "button-primary", "", "");
