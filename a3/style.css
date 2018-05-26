@@ -35,7 +35,7 @@
 .booking-image {
 	background: url("../media/booking.jpg");
 	background-repeat:no-repeat;
-	background-size:auto;
+	background-size:contain;
 }
 
 /* Top left logo image */
