@@ -137,9 +137,9 @@ top_module("Accommodation", "accommodation-background", "", "button-primary", ""
     <h3>Pricing Details</h3></br>
 <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=accommodation" method="get">
 
-    <input id="aid" type="hidden" name="aid" value="accommodationid"/>
+    <input type="hidden" name="aid" id="aid" value=""/>
 
-    <p>Arrival Date:<br> <input class="form-width black-text" type="date" name="date" value=""/></p>
+    <p>Arrival Date:<br> <input class="form-width black-text" type="date" name="date" value="" required/></p>
     <p>Number of Days:<br> 
         <select class="form-width black-text" name="days">
             <option disabled selected value>Please select</option>
@@ -161,7 +161,7 @@ top_module("Accommodation", "accommodation-background", "", "button-primary", ""
     </p>
 
     <p>Number of Adults:<br>
-        <select class="form-width black-text"  name="adults">
+        <select class="form-width black-text"  name="adults" required>
             <option disabled selected value>Please select</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -178,7 +178,7 @@ top_module("Accommodation", "accommodation-background", "", "button-primary", ""
 
 
     <p>Number of Children:<br>
-        <select class="form-width black-text" name="children">
+        <select class="form-width black-text" name="children" required>
             <option disabled selected value>Please select</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -192,6 +192,8 @@ top_module("Accommodation", "accommodation-background", "", "button-primary", ""
             <option value="10">10</option>
         </select>
     </p>
+    
+    
     <div><button id="submit-button" type="submit" value="submit" >Book</button></div>
 </form>
 </div>

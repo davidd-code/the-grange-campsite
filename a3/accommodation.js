@@ -128,3 +128,41 @@ function cs() {
 		a.style.display="none";
 	}
 }
+
+var priceBook {
+    minAdult: 1,
+    minChild: 0,
+    maxPerson: 10,
+    sites: {
+        US: {
+            price: 35.25,
+            additionalAdultPrice: 10,
+            additionalChildPrice: 5,
+            includedPerson: 2
+        },
+        UM: {
+            price: 40.50,
+            additionalAdultPrice: 10,
+            additionalChildPrice: 5,
+            includedPerson: 2
+        },
+        PS: {
+            price:50.25,
+            additionalAdultPrice: 10,
+            additioanlChildPrice: 5,
+            includedPerson: 2
+        },
+        PM: {
+            price: 60.50,
+            additionalAdultPrice: 10,
+            additionalChildPrice: 5,
+            includedPerson: 2
+        },
+        C:  {
+            price: 100,
+            additionalAdultPrice: 0,
+            additionalChildPrice: 0,
+            includedPerson: 0
+        }
+    }
+};
