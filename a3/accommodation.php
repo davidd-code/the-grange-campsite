@@ -15,7 +15,7 @@ top_module("Accommodation", "accommodation-background", "", "button-primary", ""
 
     <button onclick="UM()" class="white-text">Medium Unpowered Site</button>
 
-    <button onclick="PS()" class="white-text">Medium Powered Site</button>
+    <button onclick="PM()" class="white-text">Medium Powered Site</button>
 
     <button onclick="C()" class="white-text">Caravan Sites</button>
 </div>
