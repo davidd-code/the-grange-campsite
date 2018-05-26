@@ -1,5 +1,5 @@
 <?php
-    function top_module($pageTitle, $background) {
+    function top_module($pageTitle, $background, $p1, $p2, $p3, $p4) {
     $html = <<<"OUTPUT"
             <!DOCTYPE html>
             <html lang="en">
@@ -39,6 +39,18 @@
 	           <a href="index.html">
         	       <img class="logo" src="../media/companyLogo.png" alt="Simplified fireplace with text saying the Grange under it">
 	           </a>
+                
+                <nav>
+                    <div>
+                        <ul>
+                            <li><a class="button $p1 white-text" href="index.php">Home</a></li>
+                            <li><a class="button $p2 white-text" href="accommodation.php">Accomodation</a></li>
+                            <li><a class="button $p3 white-text" href="rates.php">Rates</a></li>
+                            <li><a class="button $p4 white-text" href="contact.php">Contact Us</a></li>      
+                        </ul>
+                    </div>
+                </nav>
+            </header>
 OUTPUT;
         echo $html;
     }

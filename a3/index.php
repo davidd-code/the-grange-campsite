@@ -1,19 +1,8 @@
 <?php
     require_once("tools.php");
-    top_module("Welcome", "background-image");
+    top_module("Welcome", "background-image", "button-primary", "", "", "");
 ?>
-        <nav>
-            <div>
-                <ul>
-                    <li><a class="button button-primary white-text" href="index.php">Home</a></li>
-                    <li><a class="button white-text" href="accommodation.php">Accomodation</a></li>
-                    <li><a class="button white-text" href="rates.php">Rates</a></li>
-                    <li><a class="button white-text" href="contact.php">Contact Us</a></li>      
-		</ul>
-	    </div>
-	</nav>
 
-    </header>
 
     <body class="dark-background">
 
