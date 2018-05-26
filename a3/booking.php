@@ -18,9 +18,18 @@ print_r($_SESSION);
 print_r($_POST);
     
 require_once("tools.php");
-top_module("Booking", "accommodation-background", "", "button-primary", "", "");
+top_module("Booking", "booking-background", "", "button-primary", "", "");
 ?>
 
+    <!-- Primary Page Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container content-padding light-background">
+        <h3>Your Booking Details</h3>
+        
+    </div>
+
+    <!-- End Document
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 <?php
 require_once("tools.php");
