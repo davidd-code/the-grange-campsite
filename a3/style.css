@@ -251,4 +251,8 @@ button {
     padding-right:5em;
 }
 
-
+@media print {
+  aside#debug {
+    display: none; 
+  }
+}
