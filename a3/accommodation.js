@@ -16,8 +16,8 @@ function sus() {
 		e.style.display="none";
 	} else {
 		
-        f.style.display="none";	
-        a.style.display= "block";
+        f.style.display="block";	
+        a.style.display="none";
 		b.style.display="none";
 		c.style.display="none";
 		d.style.display="none";
@@ -42,8 +42,8 @@ function sps() {
 		e.style.display="none";
 	} else {
 		
-        f.style.display="none";	
-        b.style.display= "block";
+        f.style.display="block";	
+        b.style.display="none";
 		a.style.display="none";
 		c.style.display="none";
 		d.style.display="none";
@@ -60,8 +60,8 @@ function mus() {
     var f = document.getElementById("landing");
 	if (c.style.display==="none") {
 
-        f.style.display="none";	
-		c.style.display="block";
+        f.style.display="block";	
+		c.style.display="none";
 		a.style.display="none";
 		b.style.display="none";
 		d.style.display="none";
@@ -94,8 +94,8 @@ function mps() {
 		e.style.display="none";
 	} else {
 		
-        f.style.display="none";	
-        d.style.display= "block";
+        f.style.display="block";	
+        d.style.display="none";
 		b.style.display="none";
 		c.style.display="none";
 		a.style.display="none";
@@ -118,8 +118,8 @@ function cs() {
 		d.style.display="none";
 		a.style.display="none";
 	} else {
-		e.style.display= "block";
-        f.style.display="none";	
+		e.style.display="none";
+        f.style.display="block";	
 		b.style.display="none";
 		c.style.display="none";
 		d.style.display="none";
