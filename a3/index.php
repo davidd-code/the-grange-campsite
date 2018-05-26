@@ -59,7 +59,10 @@
 			</div>
 		</div>
 	</div>
-
+        
+        <!-- End Document
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        
 <?php
     require_once("tools.php");
     bottom_module();

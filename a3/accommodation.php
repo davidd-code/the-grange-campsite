@@ -1,25 +1,9 @@
 <?php
     require_once("tools.php");
-    top_module("Welcome", "background-image", "", "button-primary", "", "");
+    top_module("Accommodation", "accommodation-background", "", "button-primary", "", "");
 ?>
 
-	<nav>
-	    <div>
-		<ul>
-		    <li><a class="button white-text" href="index.php">Home</a></li>
-		    <li><a class="button button-primary white-text" href="accommodation.php">Accomodation</a></li>
-		    <li><a class="button white-text" href="rates.php">Rates</a></li>
-		    <li><a class="button white-text" href="contact.php">Contact Us</a></li>      
-		</ul>
-	    </div>
-	</nav>
-
-    </header>
-
-
-
-    <body class="dark-background">
-	<!-- Primary Page Layout
+    <!-- Primary Page Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
     <div class="text-center">
@@ -218,6 +202,9 @@
 	    </form>
 	    </div>
    </div>
+
+    <!-- End Document
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 <?php
     require_once("tools.php");

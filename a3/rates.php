@@ -1,23 +1,10 @@
 <?php
     require_once("tools.php");
-    top_module("Welcome", "background-image", "", "", "button-primary", "");
+    top_module("Rates", "rates-background", "", "", "button-primary", "");
 ?>
-	<nav>
-	    <div>
-		<ul>
-		    <li><a class="button white-text" href="index.php">Home</a></li>
-		    <li><a class="button white-text" href="accommodation.php">Accomodation</a></li>
-		    <li><a class="button button-primary white-text" href="rates.php">Rates</a></li>
-		    <li><a class="button white-text" href="contact.php">Contact Us</a></li>      
-		</ul>
-	    </div>
-	</nav>
-</header>
 
-<body class="dark-background">
-
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- Primary Page Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
     <div class="container text-center">
 
@@ -76,9 +63,8 @@
 
 		<p class="text-center"></br>Per night rate includes 2 adults or 1 adult + 1 child. All prices <u>include</u> GST</p>
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</body>
+    <!-- End Document
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 <?php
     require_once("tools.php");

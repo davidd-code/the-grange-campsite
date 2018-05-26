@@ -1,23 +1,10 @@
 <?php
     require_once("tools.php");
-    top_module("Welcome", "background-image", "", "", "", "button-primary");
+    top_module("Contact Us", "contact-background", "", "", "", "button-primary");
 ?>
-	<nav>
-	    <div>
-		<ul>
-		    <li><a class="button white-text" href="index.php">Home</a></li>
-		    <li><a class="button white-text" href="accommodation.php">Accomodation</a></li>
-		    <li><a class="button white-text" href="rates.php">Rates</a></li>
-		    <li><a class="button button-primary white-text" href="contact.php">Contact Us</a></li>      
-		</ul>
-	    </div>
-	</nav>
-    </header>
-
-
 
     <!-- Primary Page Layout
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<body class="dark-background">
 	    <div id="contact-form" class="container content-padding light-background">
 		<h3>Get In Touch</h3>
@@ -44,7 +31,9 @@
 		    <div><button id="submit-button" type="submit" value="submit" >Submit</button></div>
 		</form>
 	    </div>
-
+        
+        <!-- End Document
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <?php
     require_once("tools.php");
     bottom_module();
