@@ -268,6 +268,7 @@ function calculatePrice()   {
     }
     GST = price/10;
     totalPrice = price + GST;
+    alert(totalPrice);
     document.getElementById("price").innerHTML = totalPrice;
     document.getElementById("GST").innerHTML = GST;
 }
