@@ -28,7 +28,23 @@ top_module("Booking", "booking-image", "", "button-primary", "", "");
         <h3>Your Booking Details</h3>
         <p>Accommodation Type: 
             <?php
-                echo $_SESSION['booking']['aid']
+                switch($_SESSION['booking']['aid']) {
+                    case "US":
+                        echo "Unpowered Small Camping Site";
+                        break;
+                    case "UM":
+                        echo "Unpowered Medium Camping Site";
+                        break;
+                    case "PS":
+                        echo "Powered Small Camping Site";
+                        break;
+                    case "PM":
+                        echo "Powered Medium Camping Site";
+                        break;
+                    case "C":
+                        echo "Caravan Site";
+                        break;
+                }
             ?>
         <p>
         <p>Arrival Date: <p>
