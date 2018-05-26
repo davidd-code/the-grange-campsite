@@ -7,11 +7,11 @@ $_SESSION['booking'] = array (
     'days' =>$_POST['days'],
     'adults' =>$_POST['adults'],
     'children' =>$_POST['children'],
-    'customer' => array (
+    /*'customer' => array (
         'name' =>$_POST['name'],
         'email' =>$_POST['email'],
         'phone' =>$_POST['phone']
-    )
+    )*/
 );
 
 echo $_POST;
