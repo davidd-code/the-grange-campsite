@@ -192,7 +192,7 @@ top_module("Accommodation", "accommodation-background", "", "button-primary", ""
             <option value="10">10</option>
         </select>
     </p>
-
+    <div><button id="submit-button" type="submit" value="submit" >Book</button></div>
 </form>
 </div>
 </div>
