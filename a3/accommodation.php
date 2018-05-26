@@ -133,70 +133,75 @@ top_module("Accommodation", "accommodation-background", "", "button-primary", ""
 </div>
 
 
-<div class="six columns text-left content-padding light-background no-margin">
-    <h3>Pricing Details</h3></br>
-<form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=accommodation" method="get">
+    <div class="six columns text-left content-padding light-background no-margin">
+        <h3>Pricing Details</h3></br>
+        <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=accommodation" method="get">
 
-    <input type="hidden" name="aid" id="aid" value=""/>
+            <input type="hidden" name="aid" id="aid" value=""/>
 
-    <p>Arrival Date:<br> <input class="form-width black-text" type="date" name="date" value="" required/></p>
-    <p>Number of Days:<br> 
-        <select class="form-width black-text" name="days">
-            <option disabled selected value>Please select</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-            <option value="13">13</option>
-            <option value="14">14</option>
-        </select>
-    </p>
+            <p>Arrival Date:<br> <input class="form-width black-text" type="date" name="date" value="" required/></p>
+            <p>Number of Days:<br> 
+                <select class="form-width black-text" name="days">
+                    <option disabled selected value>Please select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                </select>
+            </p>
 
-    <p>Number of Adults:<br>
-        <select class="form-width black-text"  name="adults" required>
-            <option disabled selected value>Please select</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-        </select>
-    </p>
+            <p>Number of Adults:<br>
+                <select class="form-width black-text"  name="adults" required>
+                    <option disabled selected value>Please select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </p>
 
 
-    <p>Number of Children:<br>
-        <select class="form-width black-text" name="children" required>
-            <option disabled selected value>Please select</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-        </select>
-    </p>
-    
-    
-    <div><button id="submit-button" type="submit" value="submit" >Book</button></div>
-</form>
-</div>
+            <p>Number of Children:<br>
+                <select class="form-width black-text" name="children" required>
+                    <option disabled selected value>Please select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </p>
+
+            <span>Total Price: $</span>
+            <span id="price"></span>
+            <br>
+            <span>Includes GST: $</span>
+            <span id="GST"></span>
+            
+            <div><button id="submit-button" type="submit" value="submit" >Book</button></div>
+        </form>
+    </div>
 </div>
 
 <!-- End Document

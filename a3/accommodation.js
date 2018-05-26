@@ -166,3 +166,7 @@ var priceBook = {
         }
     }
 };
+
+function calculatePrice()   {
+    
+}
