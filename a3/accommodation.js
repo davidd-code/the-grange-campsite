@@ -149,7 +149,7 @@ var priceBook = {
         PS: {
             price:50.25,
             additionalAdultPrice: 10,
-            additioanlChildPrice: 5,
+            additionalChildPrice: 5,
             includedPerson: 2
         },
         PM: {
@@ -199,7 +199,7 @@ function calculatePrice()   {
                 document.getElementById("GST").innerHTML = GST;
             }   else    {
                 pricePerDay += (adults - 2) * priceBook['sites'][aid.value]['additionalAdultPrice'];
-                pricePerDay += children * priceBook['sites'][aid.value]['additionalChildPrice'];
+                pricePerDay += (children) * priceBook['sites'][aid.value]['additionalChildPrice'];
                 console.log(priceBook['sites'][aid.value]['additionalChildPrice']);
                 totalPrice = days * pricePerDay;
                 GST = totalPrice / 10;
