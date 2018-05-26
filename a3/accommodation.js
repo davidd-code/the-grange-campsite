@@ -167,8 +167,43 @@ var priceBook = {
     }
 };
 
-
 function calculatePrice()   {
+    var aid = document.getElementById("aid");
+    var days = document.getElementById("days").value;
+    var adults = document.getElementById("adults").value;
+    var children = document.getElementById("children").value;
+    var totalPeople = adults+children;
+    var pricePerDay = 0;
+    var totalPrice = 0;
+    var GST = 0;
+    
+    if(priceBook['sites'][aid.value]['includedPerson'] > 0)    {
+        if(totalPeople > priceBook.maxPerson)   {
+            document.getElementById("error").innerHTML = "Maximum total number of people is 10";
+        }   else if(adults < priceBook.minAdult)   {
+            document.getElementById("error").innerHTML = "Minimum number of Adults is 1";
+        }   else if(totalPeople <= 2)   {
+            pricePerDay += priceBook['sites'][aid.value]['price'];
+        }   else    {
+            pricePerDay += priceBook['sites'][aid.value]['price'];
+            if(adults == 1) {
+                pricePerDay += (children-1) * priceBook['sites'][aid.value]['additionalChildPrice'];
+                totalPrice = days * pricePerDay;
+            }   else    {
+                pricePerDay += (adults - 2) * priceBook['sites'][aid.value]['additionalAdultPrice'];
+                pricePerDay += children * priceBook['sites'][aid.value]['additionalChildPrice'];
+            }
+        }
+    }   else    {
+        pricePerDay += priceBook['sites'][aid.value]['price'];
+    }
+    totalPrice = days * pricePerDay;
+    GST = totalPrice / 10;
+    document.getElementById("price").innerHTML = totalPrice;
+    document.getElementById("GST").innerHTML = GST;
+}
+/*
+function calculateePrice()   {
     var aid = document.getElementById("aid");
     var days = document.getElementById("days").value;
     var adults = document.getElementById("adults").value;
@@ -277,4 +312,4 @@ function calculatePrice()   {
     totalPrice = price + GST;
     document.getElementById("price").innerHTML = totalPrice;
     document.getElementById("GST").innerHTML = GST;
-}
+}*/
