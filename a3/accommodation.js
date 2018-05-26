@@ -182,8 +182,8 @@ function calculatePrice()   {
             document.getElementById("error").innerHTML = "Maximum total number of people is 10";
             document.getElementById("price").innerHTML = "N/A";
             document.getElementById("GST").innerHTML = "N/A";
-        }   else if(adults < priceBook.minAdult)   {
-            document.getElementById("error").innerHTML = "Minimum number of Adults is 1";
+        }   else if(aid.value == "")   {
+            document.getElementById("error").innerHTML = "Please select one of the camp sites above";
             document.getElementById("price").innerHTML = "N/A";
             document.getElementById("GST").innerHTML = "N/A";
         }   else if(totalPeople <= 2)   {
