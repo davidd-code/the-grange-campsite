@@ -1,9 +1,9 @@
 function sus() {
-    var a = document.getElementById("sus");
-    var b = document.getElementById("sps");
-    var c = document.getElementById("mus");
-    var d = document.getElementById("mps");
-    var e = document.getElementById("cs");
+    var a = document.getElementById("US");
+    var b = document.getElementById("PS");
+    var c = document.getElementById("UM");
+    var d = document.getElementById("PM");
+    var e = document.getElementById("C");
     var f = document.getElementById("landing");
 
     if (a.style.display==="block") {
@@ -26,11 +26,11 @@ function sus() {
 }
 
 function sps() {
-    var a = document.getElementById("sus");
-    var b = document.getElementById("sps");
-    var c = document.getElementById("mus");
-    var d = document.getElementById("mps");
-    var e = document.getElementById("cs"); 
+    var a = document.getElementById("US");
+    var b = document.getElementById("PS");
+    var c = document.getElementById("UM");
+    var d = document.getElementById("PM");
+    var e = document.getElementById("C"); 
     var f = document.getElementById("landing");
     if (b.style.display==="block") {
         document.getElementById("aid").value = "";
@@ -52,11 +52,11 @@ function sps() {
 }
 
 function mus() {
-    var a = document.getElementById("sus");
-    var b = document.getElementById("sps");
-    var c = document.getElementById("mus");
-    var d = document.getElementById("mps");
-    var e = document.getElementById("cs");
+    var a = document.getElementById("US");
+    var b = document.getElementById("PS");
+    var c = document.getElementById("UM");
+    var d = document.getElementById("PM");
+    var e = document.getElementById("C");
     var f = document.getElementById("landing");
     if (c.style.display==="block") {
         document.getElementById("aid").value = "";
@@ -78,11 +78,11 @@ function mus() {
 }
 
 function mps() {
-    var a = document.getElementById("sus");
-    var b = document.getElementById("sps");
-    var c = document.getElementById("mus");
-    var d = document.getElementById("mps");
-    var e = document.getElementById("cs");
+    var a = document.getElementById("US");
+    var b = document.getElementById("PS");
+    var c = document.getElementById("UM");
+    var d = document.getElementById("PM");
+    var e = document.getElementById("C");
     var f = document.getElementById("landing");
     if (d.style.display==="block") {
         document.getElementById("aid").value = "";
@@ -104,11 +104,11 @@ function mps() {
 }
 
 function cs() {
-    var a = document.getElementById("sus");
-    var b = document.getElementById("sps");
-    var c = document.getElementById("mus");
-    var d = document.getElementById("mps");
-    var e = document.getElementById("cs");
+    var a = document.getElementById("US");
+    var b = document.getElementById("PS");
+    var c = document.getElementById("UM");
+    var d = document.getElementById("PM");
+    var e = document.getElementById("C");
     var f = document.getElementById("landing");
     if (e.style.display==="block") {
         document.getElementById("aid").value = "";
@@ -166,6 +166,18 @@ var priceBook = {
         }
     }
 };
+
+function calculatePricee()  {
+    var aid = document.getElementById("aid");
+    var days = document.getElementById("days").value;
+    var adults = document.getElementById("adults").value;
+    var children = document.getElementById("children").value;
+    var price = 0;
+    var totalPrice = 0;
+    var GST = 0;
+    
+    if(priceBook['sites'[]])
+}
 
 function calculatePrice()   {
     var aid = document.getElementById("aid");

@@ -31,7 +31,7 @@ top_module("Accommodation", "accommodation-background", "", "button-primary", ""
         </p>
     </div>
 
-    <div id="sus" class="six columns text-left content-padding light-background no-display no-margin">
+    <div id="US" class="six columns text-left content-padding light-background no-display no-margin">
         <h3>Small Unpowered Site</h3><br>
         <p>
             Positioned on the south end of the campsite, our small unpowered sites have views overlooking the campgrounds
@@ -48,7 +48,7 @@ top_module("Accommodation", "accommodation-background", "", "button-primary", ""
         </p>
 </div>
 
-<div id="sps" class="six columns text-left content-padding light-background no-display no-margin">
+<div id="PS" class="six columns text-left content-padding light-background no-display no-margin">
     <h3>Small Powered Site</h3><br>
     <p>
         Positioned on the south-east end of the campsite, our small powered sites have facilities for those who are looking 
@@ -70,7 +70,7 @@ top_module("Accommodation", "accommodation-background", "", "button-primary", ""
     </p>
 </div>
 
-<div id="mus" class="six columns text-left content-padding light-background no-display no-margin">
+<div id="UM" class="six columns text-left content-padding light-background no-display no-margin">
     <h3>Medium Unpowered Site</h3><br>
     <p>
         Positioned on the west end of the campsite, the medium unpowered sites have views that watch over the beach front with
@@ -90,7 +90,7 @@ top_module("Accommodation", "accommodation-background", "", "button-primary", ""
 </div>
 
 
-<div id="mps" class="six columns text-left content-padding light-background no-display no-margin">
+<div id="PM" class="six columns text-left content-padding light-background no-display no-margin">
     <h3>Medium Powered Site</h3><br>
     <p>
         Positioned on the East end of the campsite, our medium powered sites are positioned a short walk from the bbq area 
@@ -115,7 +115,7 @@ top_module("Accommodation", "accommodation-background", "", "button-primary", ""
 </div>
 
 
-<div id="cs" class="six columns text-left content-padding light-background no-display no-margin">
+<div id="C" class="six columns text-left content-padding light-background no-display no-margin">
     <h3>Caravan Site</h3><br>
     <p>
         Positioned on the north end of the campsite, our caravan sites have plenty of spaces for you to park
