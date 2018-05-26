@@ -15,7 +15,7 @@ function sus() {
 		d.style.display="none";
 		e.style.display="none";
 	} else {
-		
+		alert(a.style.display);
         f.style.display="block";	
         a.style.display="none";
 		b.style.display="none";
