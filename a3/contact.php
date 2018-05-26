@@ -45,15 +45,7 @@
 		</form>
 	    </div>
 
-	    <!-- End Document
-		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	</body>
-
-	<footer>
-	    Created By David Doan #s3686810 and Joshua Miranda #3690595 <br>
-	    Check out the new logo that I created on LogoMakr.com https://logomakr.com/0QmeW9<br>
-	    Background image: Photo by Rahul Bhosale on Unsplash - https://unsplash.com/photos/yBgC-qVCxMg
-	</footer>
-
-</html>
-
+<?php
+    require_once("tools.php");
+    bottom_module();
+?>
