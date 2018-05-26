@@ -7,7 +7,7 @@ function sus() {
     var f = document.getElementById("landing");
 	
     if (a.style.display==="none") {
-        alert(a.style.display);
+        alert(document.getElementById("sus").style.display);
         f.style.display="none";	
 		b.style.display="none"; 
         a.style.display="block";
@@ -15,7 +15,7 @@ function sus() {
 		d.style.display="none";
 		e.style.display="none";
 	} else {
-		alert(a.style.display);
+		alert(document.getElementById("sus").style.display);
         f.style.display="block";	
         a.style.display="none";
 		b.style.display="none";
