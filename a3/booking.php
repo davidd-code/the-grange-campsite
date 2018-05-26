@@ -23,6 +23,18 @@ top_module("Booking", "booking-image", "", "button-primary", "", "");
 
     <!-- Primary Page Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <?php>
+        $html = <<<"BOOKING"
+                <div class="container content-padding light-background">
+                    <h3>Your Booking Details</h3>
+                    <p>Accommodation Type: $_SESSION['booking']['aid']<p>
+                </div>
+
+BOOKING;
+        echo $html;
+    }
+?>
+
     <div class="container content-padding light-background">
         <h3>Your Booking Details</h3>
         
