@@ -42,4 +42,27 @@
 OUTPUT;
         echo $html;
     }
+
+    function bottom_module()    {
+        $html = <<<"FOOTER"
+        
+                <!-- End Document
+            –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+                </body>
+                <footer class="white-text text-center">
+                    <div id="footer">
+                        Created By David Doan #s3686810 and Joshua Miranda #3690595 <br>
+                        Check out the new logo that I created on LogoMakr.com 
+                        https://logomakr.com/68T8ti, https://logomakr.com/9ri0w2, <br>
+                        https://logomakr.com/6D7mrw, https://logomakr.com/3MoZll, https://logomakr.com/0QmeW9<br>
+                        Background image: Photo by Kara Michelle on Unsplash - https://unsplash.com/photos/a_Q8MzP3xR4<br>
+                        Background image: Photo by Chris Schog on Unsplash - https://unsplash.com/photos/EnCaUE4QNOw<br>
+                        Background image: Photo by Wei Pan on Unsplash - https://unsplash.com/photos/Ta0A1miYZKc<br>
+                        Background image: Photo by Rahul Bhosale on Unsplash - https://unsplash.com/photos/yBgC-qVCxMg<br>
+                    </div>
+                </footer>
+            </html>
+FOOTER;
+        echo $html;
+    }
 ?>

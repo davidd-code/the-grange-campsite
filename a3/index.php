@@ -8,7 +8,7 @@
                     <li><a class="button button-primary white-text" href="index.php">Home</a></li>
                     <li><a class="button white-text" href="accommodation.php">Accomodation</a></li>
                     <li><a class="button white-text" href="rates.php">Rates</a></li>
-		    <li><a class="button white-text" href="contact.php">Contact Us</a></li>      
+                    <li><a class="button white-text" href="contact.php">Contact Us</a></li>      
 		</ul>
 	    </div>
 	</nav>
@@ -71,18 +71,7 @@
 		</div>
 	</div>
 
-
-	<!-- End Document
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    </body>
-    <footer class="white-text text-center">
-	    <div id="footer">
-		Created By David Doan #s3686810 and Joshua Miranda #3690595 <br>
-		Check out the new logo that I created on LogoMakr.com 
-		https://logomakr.com/68T8ti, https://logomakr.com/9ri0w2, <br>
-	    https://logomakr.com/6D7mrw, https://logomakr.com/3MoZll, https://logomakr.com/0QmeW9<br>
-	    Background image: Photo by Kara Michelle on Unsplash - https://unsplash.com/photos/a_Q8MzP3xR4
-	    </div>
-    </footer>
-
-</html>
+<?php
+    require_once("tools.php");
+    bottom_module();
+?>
