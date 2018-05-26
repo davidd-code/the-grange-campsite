@@ -137,7 +137,7 @@ top_module("Accommodation", "accommodation-background", "", "button-primary", ""
     <h3>Pricing Details</h3></br>
 <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=accommodation" method="get">
 
-    <input type="hidden" name="aid" value="accommodationid"/>
+    <input id="aid" type="hidden" name="aid" value="accommodationid"/>
 
     <p>Arrival Date:<br> <input class="form-width black-text" type="date" name="date" value=""/></p>
     <p>Number of Days:<br> 
