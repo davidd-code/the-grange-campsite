@@ -184,6 +184,7 @@ function calculatePrice()   {
     }  
     
     if(priceBook['sites'][aid.value]['includedPerson'] > 0)    {
+        document.getElementById("error").innerHTML = "";
         if(totalPeople > priceBook.maxPerson)   {
             document.getElementById("error").innerHTML = "Maximum total number of people is 10";
             document.getElementById("price").innerHTML = "N/A";
