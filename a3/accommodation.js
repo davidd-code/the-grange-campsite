@@ -167,17 +167,6 @@ var priceBook = {
     }
 };
 
-function calculatePricee()  {
-    var aid = document.getElementById("aid");
-    var days = document.getElementById("days").value;
-    var adults = document.getElementById("adults").value;
-    var children = document.getElementById("children").value;
-    var price = 0;
-    var totalPrice = 0;
-    var GST = 0;
-    
-    if(priceBook['sites'[]])
-}
 
 function calculatePrice()   {
     var aid = document.getElementById("aid");
