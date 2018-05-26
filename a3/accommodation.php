@@ -194,6 +194,7 @@ top_module("Accommodation", "accommodation-background", "", "button-primary", ""
             </p>
             
             <span id="error" class="white-text"></span>
+            <br>
             <span class="white-text">Total Price: $</span>
             <span id="price" class="white-text"></span>
             <br>

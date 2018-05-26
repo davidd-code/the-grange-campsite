@@ -169,9 +169,9 @@ var priceBook = {
 
 function calculatePrice()   {
     var aid = document.getElementById("aid");
-    var days = document.getElementById("days").value;
-    var adults = document.getElementById("adults").value;
-    var children = document.getElementById("children").value;
+    var days = parseInt(document.getElementById("days").value, 10);
+    var adults = parseInt(document.getElementById("adults").value, 10);
+    var children = parseInt(document.getElementById("children").value, 10);
     var totalPeople = adults+children;
     var pricePerDay = 0;
     var totalPrice = 0;
