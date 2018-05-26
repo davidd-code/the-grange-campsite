@@ -7,7 +7,6 @@ function sus() {
     var f = document.getElementById("landing");
 	
     if (a.style.display==="none") {
-        alert(document.getElementById("sus").style.display);
         f.style.display="none";	
 		b.style.display="none"; 
         a.style.display="block";
