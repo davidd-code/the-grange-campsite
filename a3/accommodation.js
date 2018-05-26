@@ -1,4 +1,4 @@
-function sus() {
+function US() {
     var a = document.getElementById("US");
     var b = document.getElementById("PS");
     var c = document.getElementById("UM");
@@ -25,7 +25,7 @@ function sus() {
     }
 }
 
-function sps() {
+function PS() {
     var a = document.getElementById("US");
     var b = document.getElementById("PS");
     var c = document.getElementById("UM");
@@ -51,7 +51,7 @@ function sps() {
     }
 }
 
-function mus() {
+function UM() {
     var a = document.getElementById("US");
     var b = document.getElementById("PS");
     var c = document.getElementById("UM");
@@ -77,7 +77,7 @@ function mus() {
     }
 }
 
-function mps() {
+function PM() {
     var a = document.getElementById("US");
     var b = document.getElementById("PS");
     var c = document.getElementById("UM");
@@ -103,7 +103,7 @@ function mps() {
     }
 }
 
-function cs() {
+function C() {
     var a = document.getElementById("US");
     var b = document.getElementById("PS");
     var c = document.getElementById("UM");
