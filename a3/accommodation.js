@@ -169,16 +169,16 @@ var priceBook = {
 
 function calculatePrice()   {
     var aid = document.getElementById("aid");
-    var days = document.getElementById("days");
-    var adults = document.getElementById("adults");
-    var children = document.getElementById("children");
+    var days = document.getElementById("days").value;
+    var adults = document.getElementById("adults").value;
+    var children = document.getElementById("children").value;
     var price = 0;
-    var totalPrice = document.getElementById("price");
+    var totalPrice = 0;
     var GST = 0;
 
     switch(aid.value)    {
            case "US":
-                if(adult+child <= priceBook.sites.US.includedPerson)
+                if(adults+children <= priceBook.sites.US.includedPerson)
                 {
                         price = days * priceBook.sites.US.price;
                 }
@@ -195,7 +195,7 @@ function calculatePrice()   {
                 }
             break;
             case "UM":
-                if(adult+child <= priceBook.sites.UM.includedPerson)
+                if(adults+children <= priceBook.sites.UM.includedPerson)
                 {
                         price = days * priceBook.sites.UM.price;
                 }
@@ -213,7 +213,7 @@ function calculatePrice()   {
             break;
     
             case "PS":
-                if(adult+child <= priceBook.sites.PS.includedPerson)
+                if(adults+children <= priceBook.sites.PS.includedPerson)
                 {
                         price = days * priceBook.sites.PS.price;
                 }
@@ -231,7 +231,7 @@ function calculatePrice()   {
             break;
             
             case "PM":
-                if(adult+child <= priceBook.sites.PM.includedPerson)
+                if(adults+children <= priceBook.sites.PM.includedPerson)
                 {
                         price = days * priceBook.sites.PM.price;
                 }
@@ -249,7 +249,7 @@ function calculatePrice()   {
             break;
     
             case "C":
-                if(adult+child <= priceBook.sites.C.includedPerson)
+                if(adults+children <= priceBook.sites.C.includedPerson)
                 {
                         price = days * priceBook.sites.C.price;
                 }
