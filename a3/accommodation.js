@@ -180,8 +180,12 @@ function calculatePrice()   {
     if(priceBook['sites'][aid.value]['includedPerson'] > 0)    {
         if(totalPeople > priceBook.maxPerson)   {
             document.getElementById("error").innerHTML = "Maximum total number of people is 10";
+            document.getElementById("price").innerHTML = "N/A";
+            document.getElementById("GST").innerHTML = "N/A";
         }   else if(adults < priceBook.minAdult)   {
             document.getElementById("error").innerHTML = "Minimum number of Adults is 1";
+            document.getElementById("price").innerHTML = "N/A";
+            document.getElementById("GST").innerHTML = "N/A";
         }   else if(totalPeople <= 2)   {
             pricePerDay += priceBook['sites'][aid.value]['price'];
             totalPrice = days * pricePerDay;
@@ -214,116 +218,4 @@ function calculatePrice()   {
         document.getElementById("price").innerHTML = totalPrice;
         document.getElementById("GST").innerHTML = GST;
     }
-
 }
-/*
-function calculateePrice()   {
-    var aid = document.getElementById("aid");
-    var days = document.getElementById("days").value;
-    var adults = document.getElementById("adults").value;
-    var children = document.getElementById("children").value;
-    var price = 0;
-    var totalPrice = 0;
-    var GST = 0;
-
-    switch(aid.value)    {
-           case "US":
-                if(adults+children <= priceBook.sites.US.includedPerson)
-                {
-                        price = days * priceBook.sites.US.price;
-                }
-                else
-                {
-                    if(adults >= 2)
-                        {
-                            price = days * (priceBook.sites.US.price + (priceBook.sites.US.additionalAdultPrice * (adults - 2)) + (priceBook.sites.US.additionalChildPrice * (children)));
-                        }
-                    else
-                        {
-                            price = days * (priceBook.sites.US.price + (priceBook.sites.US.additionalChildPrice * (children-1)));
-                        }
-                }
-            break;
-            case "UM":
-                if(adults+children <= priceBook.sites.UM.includedPerson)
-                {
-                        price = days * priceBook.sites.UM.price;
-                }
-                else
-                {
-                    if(adults >= 2)
-                        {
-                            price = days * (priceBook.sites.UM.price + (priceBook.sites.UM.additionalAdultPrice * (adults - 2)) + (priceBook.sites.UM.additionalChildPrice * (children)));
-                        }
-                    else
-                        {
-                            price = days * (priceBook.sites.UM.price + (priceBook.sites.UM.additionalChildPrice * (children-1)));
-                        }
-                }
-            break;
-    
-            case "PS":
-                if(adults+children <= priceBook.sites.PS.includedPerson)
-                {
-                        price = days * priceBook.sites.PS.price;
-                }
-                else
-                {
-                    if(adults >= 2)
-                        {
-                            price = days * (priceBook.sites.PS.price + (priceBook.sites.PS.additionalAdultPrice * (adults - 2)) + (priceBook.sites.PS.additionalChildPrice * (children)));
-                        }
-                    else
-                        {
-                            price = days * (priceBook.sites.PS.price + (priceBook.sites.PS.additionalChildPrice * (children-1)));
-                        }
-                }
-            break;
-            
-            case "PM":
-                if(adults+children <= priceBook.sites.PM.includedPerson)
-                {
-                        price = days * priceBook.sites.PM.price;
-                }
-                else
-                {
-                    if(adults >= 2)
-                        {
-                            price = days * (priceBook.sites.PM.price + (priceBook.sites.PM.additionalAdultPrice * (adults - 2)) + (priceBook.sites.PM.additionalChildPrice * (children)));
-                        }
-                    else
-                        {
-                            price = days * (priceBook.sites.PM.price + (priceBook.sites.PM.additionalChildPrice * (children-1)));
-                        }
-                }
-            break;
-    
-            case "C":
-                if(adults+children <= priceBook.sites.C.includedPerson)
-                {
-                        price = days * priceBook.sites.C.price;
-                }
-                else
-                {
-                    if(adults >= 2)
-                        {
-                            price = days * (priceBook.sites.C.price + (priceBook.sites.C.additionalAdultPrice * (adults - 2)) + (priceBook.sites.C.additionalChildPrice * (children)));
-                        }
-                    else
-                        {
-                            price = days * (priceBook.sites.C.price + (priceBook.sites.C.additionalChildPrice * (children-1)));
-                        }
-                }
-            break;
-            
-            case "":
-                document.getElementById("error").innerHTML = "Select one of the campsites with the buttons above.";
-                document.getElementById("price").innerHTML = "N/A";
-                document.getElementById("GST").innerHTML = "N/A";
-            return;
-    }
-    GST = price/10;
-    totalPrice = price + GST;
-    document.getElementById("price").innerHTML = totalPrice;
-    document.getElementById("GST").innerHTML = GST;
-}*/
