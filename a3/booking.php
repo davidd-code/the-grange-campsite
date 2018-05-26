@@ -24,8 +24,8 @@ top_module("Booking", "booking-image", "", "button-primary", "", "");
     <!-- Primary Page Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="container content-padding light-background">
-        <hr>
         <h3>Your Booking Details</h3>
+        <hr>
         <p>Accommodation Type: 
             <?php
                 switch($_SESSION['booking']['aid']) {
@@ -47,7 +47,22 @@ top_module("Booking", "booking-image", "", "button-primary", "", "");
                 }
             ?>
         <p>
-        <p>Arrival Date: <p>
+        <p>Arrival Date: <?php echo $_SESSION['booking']['date']?><p>
+        <p>Number of Days: <?php echo $_SESSION['booking']['days']?><p>
+        <p>Number of Adults: <?php echo $_SESSION['booking']['adults']?><p>
+        <p>Number of Children: <?php echo $_SESSION['booking']['children']?><p>
+        <p>Total Price: 
+            <?php 
+            ?>
+        <p>
+        <p>Includes GST: 
+            <?php
+    
+            ?>
+        <p>
+            
+        <h3>Customer Information</h3>
+        <hr>
     </div>
 
 ?>
