@@ -176,14 +176,16 @@ function calculatePrice()   {
     var pricePerDay = 0;
     var totalPrice = 0;
     var GST = 0;
-    console.log(priceBook['sites'][aid.value]['additionalChildPrice']);
+    
+    if(aid.value == "")   {
+            document.getElementById("error").innerHTML = "Please select one of the camp sites above";
+            document.getElementById("price").innerHTML = "N/A";
+            document.getElementById("GST").innerHTML = "N/A";
+    }  
+    
     if(priceBook['sites'][aid.value]['includedPerson'] > 0)    {
         if(totalPeople > priceBook.maxPerson)   {
             document.getElementById("error").innerHTML = "Maximum total number of people is 10";
-            document.getElementById("price").innerHTML = "N/A";
-            document.getElementById("GST").innerHTML = "N/A";
-        }   else if(aid.value == "")   {
-            document.getElementById("error").innerHTML = "Please select one of the camp sites above";
             document.getElementById("price").innerHTML = "N/A";
             document.getElementById("GST").innerHTML = "N/A";
         }   else if(totalPeople <= 2)   {
