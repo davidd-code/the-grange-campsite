@@ -184,23 +184,36 @@ function calculatePrice()   {
             document.getElementById("error").innerHTML = "Minimum number of Adults is 1";
         }   else if(totalPeople <= 2)   {
             pricePerDay += priceBook['sites'][aid.value]['price'];
+            totalPrice = days * pricePerDay;
+            GST = totalPrice / 10;
+            document.getElementById("price").innerHTML = totalPrice;
+            document.getElementById("GST").innerHTML = GST;
         }   else    {
             pricePerDay += priceBook['sites'][aid.value]['price'];
             if(adults == 1) {
                 pricePerDay += (children-1) * priceBook['sites'][aid.value]['additionalChildPrice'];
                 totalPrice = days * pricePerDay;
+                totalPrice = days * pricePerDay;
+                GST = totalPrice / 10;
+                document.getElementById("price").innerHTML = totalPrice;
+                document.getElementById("GST").innerHTML = GST;
             }   else    {
                 pricePerDay += (adults - 2) * priceBook['sites'][aid.value]['additionalAdultPrice'];
                 pricePerDay += children * priceBook['sites'][aid.value]['additionalChildPrice'];
+                totalPrice = days * pricePerDay;
+                GST = totalPrice / 10;
+                document.getElementById("price").innerHTML = totalPrice;
+                document.getElementById("GST").innerHTML = GST;
             }
         }
     }   else    {
         pricePerDay += priceBook['sites'][aid.value]['price'];
+        totalPrice = days * pricePerDay;
+        GST = totalPrice / 10;
+        document.getElementById("price").innerHTML = totalPrice;
+        document.getElementById("GST").innerHTML = GST;
     }
-    totalPrice = days * pricePerDay;
-    GST = totalPrice / 10;
-    document.getElementById("price").innerHTML = totalPrice;
-    document.getElementById("GST").innerHTML = GST;
+
 }
 /*
 function calculateePrice()   {
