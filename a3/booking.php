@@ -18,7 +18,7 @@ print_r($_SESSION);
 print_r($_POST);
     
 require_once("tools.php");
-top_module("Booking", "booking-background", "", "button-primary", "", "");
+top_module("Booking", "booking-image", "", "button-primary", "", "");
 ?>
 
     <!-- Primary Page Layout
