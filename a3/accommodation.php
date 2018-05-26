@@ -180,6 +180,7 @@ top_module("Accommodation", "accommodation-background", "", "button-primary", ""
             <p>Number of Children:<br>
                 <select class="form-width black-text" name="children" id="children" required onchange="calculatePrice()">
                     <option disabled selected value>Please select</option>
+                    <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -189,7 +190,6 @@ top_module("Accommodation", "accommodation-background", "", "button-primary", ""
                     <option value="7">7</option>
                     <option value="8">8</option>
                     <option value="9">9</option>
-                    <option value="10">10</option>
                 </select>
             </p>
 
