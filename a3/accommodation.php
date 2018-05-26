@@ -135,7 +135,7 @@ top_module("Accommodation", "accommodation-background", "", "button-primary", ""
 
     <div class="six columns text-left content-padding light-background no-margin">
         <h3>Pricing Details</h3></br>
-        <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=accommodation" method="get">
+        <form action="booking.php" method="post">
 
             <input type="hidden" name="aid" id="aid" value=""/>
 

@@ -265,10 +265,13 @@ function calculatePrice()   {
                         }
                 }
             break;
+            
+            case "":
+                document.getElementById("price").innerHTML = "Select one of the campsites with the buttons above.";
+            return;
     }
     GST = price/10;
     totalPrice = price + GST;
-    alert(totalPrice);
     document.getElementById("price").innerHTML = totalPrice;
     document.getElementById("GST").innerHTML = GST;
 }
