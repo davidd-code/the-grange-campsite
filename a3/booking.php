@@ -1,13 +1,13 @@
 <?php
 session_start();
 
-$_SESSION['booking'] => array (
+$_SESSION['booking'] = array (
     'aid' =>$_POST['aid'],
     'date' =>$_POST['date'],
     'days' =>$_POST['days'],
     'adults' =>$_POST['adults'],
     'children' =>$_POST['children'],
-    'customer' => array (
+    'customer' = array (
         'name' =>$_POST['name'],
         'email' =>$_POST['email'],
         'phone' =>$_POST['phone']
