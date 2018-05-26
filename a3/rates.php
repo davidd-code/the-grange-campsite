@@ -1,6 +1,6 @@
 <?php
     require_once("tools.php");
-    top_module("Rates", "rates-background");
+    top_module("Welcome", "background-image", "", "", "button-primary", "");
 ?>
 	<nav>
 	    <div>
