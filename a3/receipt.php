@@ -8,7 +8,6 @@
 
     $_SESSION['customer'] = $customer;
 
-print_r($_SESSION);
 require_once("tools.php");
 
 ?>
@@ -49,9 +48,9 @@ require_once("tools.php");
     <body class="dark-background">
         <page size="A4">
             <div class="container white-text">
-                <h1>Receipt</h1>
+                <h4>Receipt</h4>
                 <hr>
-                <h2>Contact Information</h2>
+                <h4>Contact Information</h4>
                 <p>The Grange Caravan Park</p>
                 <p>Phone: 03 1234 5678</p>
                 <p>Address: Portalington, VIC 3223</p>
@@ -85,7 +84,7 @@ require_once("tools.php");
                 <p>Total Price: $<?php echo $_SESSION['price']['totalCost']?></p>
                 <p>Includes GST: $<?php echo $_SESSION['price']['GST']?></p>
                 <hr>
-                <h2>Customer Information</h2>
+                <h4>Customer Information</h4>
                 <p>Name: <?php echo $_SESSION['customer']['name']?></p>
                 <p>Mobile: <?php echo $_SESSION['customer']['phone']?></p>
                 <p>Email: <?php echo $_SESSION['customer']['email']?></p>
@@ -94,4 +93,3 @@ require_once("tools.php");
         </page>
     </body>
 </html>
-Array ( [booking] => Array ( [aid] => PS [date] => 2018-05-11 [days] => 2 [adults] => 5 [children] => 4 ) [price] => Array ( [totalCost] => 200.5 [GST] => 20.05 ) [customer] => Array ( [name] => David Doan [email] => daavid.doan@gmail.com [phone] => 0411332707 ) )
