@@ -87,28 +87,28 @@ top_module("Booking", "booking-image", "", "button-primary", "", "");
                     
                     if(strcmp($aid, "C") == 0)  {
                         $pricePerDay += $priceBook['cost'][$aid]['price'];
-                        $GST = $totalPrice / 10;
-                        $totalPrice = $pricePerDay * $days;
+                        $totalPrice = sprintf("%.2f", $days * $pricePerDay);
+                        $GST = sprintf("%.2f", $totalPrice / 10);
                         sprintf("%.2f", $totalPrice);
                     }   else    {
                         if($totalPeople <= 2)   {
                             $pricePerDay += $priceBook['cost'][$aid]['price'];
-                            $totalPrice = $days * $pricePerDay;
-                            $GST = $totalPrice / 10;
+                            $totalPrice = sprintf("%.2f", $days * $pricePerDay);
+                            $GST = sprintf("%.2f", $totalPrice / 10);
                             echo sprintf("%.2f", $totalPrice);
                         }   else    {
                             if($adults == 1)    {
                                 $pricePerDay += $priceBook['cost'][$aid]['price'];
                                 $pricePerDay += ($children -1) * $priceBook['cost'][$aid]['extraChild'];
-                                $totalPrice = $days * $pricePerDay;
-                                $GST = $totalPrice / 10;
+                                $totalPrice = sprintf("%.2f", $days * $pricePerDay);
+                                $GST = sprintf("%.2f", $totalPrice / 10);
                                 echo sprintf("%.2f", $totalPrice);
                             }   else    {
                                 $pricePerDay += $priceBook['cost'][$aid]['price'];
                                 $pricePerDay += ($adults - 2) * $priceBook['cost'][$aid]['extraAdult'];
                                 $pricePerDay += ($children) * $priceBook['cost'][$aid]['extraChild'];
-                                $totalPrice = $days * $pricePerDay;
-                                $GST = $totalPrice / 10;
+                                $totalPrice = sprintf("%.2f", $days * $pricePerDay);
+                                $GST = sprintf("%.2f", $totalPrice / 10);
                                 echo sprintf("%.2f", $totalPrice);
                             }
                         }
