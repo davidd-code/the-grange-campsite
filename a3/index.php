@@ -10,7 +10,7 @@ top_module("Welcome", "background-image", "button-primary", "", "", "");
 
     <!-- Primary Page Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
+<body class="dark-background">
     <div class="light-background">
         <div class="container">
             <div class="column text-center">
@@ -61,7 +61,7 @@ top_module("Welcome", "background-image", "button-primary", "", "", "");
             </div>
         </div>
     </div>
-
+</body>
     <!-- End Document
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 

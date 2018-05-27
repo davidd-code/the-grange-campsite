@@ -7,7 +7,7 @@ top_module("Contact Us", "contact-background", "", "", "", "button-primary");
 
 <!-- Primary Page Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
+<body onnload="load()" class="dark-background">
     <div id="contact-form" class="container content-padding light-background">
         <h3>Get In Touch</h3>
         <form id="contact_form" class="contact-form white-text" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=contact" method="post" onsubmit="return validate()">
@@ -36,7 +36,7 @@ top_module("Contact Us", "contact-background", "", "", "", "button-primary");
             <div><button id="submit-button" type="submit" value="submit" >Submit</button></div>
         </form>
     </div>
-
+</body>
     <!-- End Document
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <?php

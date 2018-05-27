@@ -7,7 +7,7 @@ top_module("Rates", "rates-background", "", "", "button-primary", "");
 
 <!-- Primary Page Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
+<body class="dark-background">
 <div class="container text-center">
 
     <p></br> Our range of affordable camping sites are here to cater to all of your outdoor adventure needs.</br> Please use the aid provided for each type when booking. </br> <a href="accommodation.html">Book now</a> to avoid disappointment! </p>
@@ -64,7 +64,7 @@ top_module("Rates", "rates-background", "", "", "button-primary", "");
 </div>
 
 <p class="text-center"></br>Per night rate includes 2 adults or 1 adult + 1 child. All prices <u>include</u> GST</p>
-
+</body>
 <!-- End Document
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 

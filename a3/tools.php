@@ -56,19 +56,12 @@
                     </div>
                 </nav>
             </header>
-            
-            <body class="dark-background">
-
 OUTPUT;
         echo $html;
     }
 
     function bottom_module()    {
         $html = <<<"FOOTER"
-        
-
-                </body>
-                
                 <footer class="white-text text-center">
                     <div id="footer">
                     <hr>
