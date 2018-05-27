@@ -118,8 +118,8 @@ top_module("Booking", "booking-image", "", "button-primary", "", "");
                     }
                 }
 
-            echo (round(calculateTotal($_SESSION['booking']['aid'], $_SESSION['booking']['days'], $_SESSION['booking']['adults'], $_SESSION['booking']['children']), 2));
-            echo "</p><p>Includes GST: ". round($GST, 2)
+            echo sprintf("%.2f", calculateTotal($_SESSION['booking']['aid'], $_SESSION['booking']['days'], $_SESSION['booking']['adults'], $_SESSION['booking']['children']));
+            echo "</p><p>Includes GST: ". sprintf("%.2f", $GST)
         ?>
     </p>
     <p>Includes GST: 
