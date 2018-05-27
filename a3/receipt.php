@@ -46,29 +46,50 @@ require_once("tools.php");
 
     </head>
 
-    <header class=>
-        <a href="index.php">
-            <img class="logo" src="../media/companyLogo.png" alt="Simplified fireplace with text saying the Grange under it">
-        </a>
-
-        <nav>
-            <div>
-                <ul>
-                    <li><a class="button white-text" href="index.php">Home</a></li>
-                    <li><a class="button white-text" href="accommodation.php">Accomodation</a></li>
-                    <li><a class="button white-text" href="rates.php">Rates</a></li>
-                    <li><a class="button white-text" href="contact.php">Contact Us</a></li>      
-                </ul>
-            </div>
-        </nav>
-
-    </header>
-    <hr>    
-
     <body class="dark-background">
         <page size="A4">
             <div class="container white-text">
-                <div class="six columns content-padding"><h1>Invoice</h1></div>
+                <div class="content-padding text-left"><h1>Receipt</h1></div>
+                    <hr>
+                    <h2>Contact Information</h2>
+                    <p>The Grange Caravan Park</p>
+                    <p>Phone: 03 1234 5678</p>
+                    <p>Address: Portalington, VIC 3223</p>
+                    <p>Email Address: reception@thegrange.com.au</p>
+                    <h2>Booking information</h2>
+                    <p>Accommodation Type: 
+                        <?php
+                        switch($_SESSION['booking']['aid']) {
+                            case "US":
+                                echo "Unpowered Small Camping Site";
+                                break;
+                            case "UM":
+                                echo "Unpowered Medium Camping Site";
+                                break;
+                            case "PS":
+                                echo "Powered Small Camping Site";
+                                break;
+                            case "PM":
+                                echo "Powered Medium Camping Site";
+                                break;
+                            case "C":
+                                echo "Caravan Site";
+                                break;
+                        }
+                        ?>
+                    </p>
+                    <p>Arrival Date: <?php echo $_SESSION['booking']['date']?></p>
+                    <p>Number of Days: <?php echo $_SESSION['booking']['days']?></p>
+                    <p>Number of Adults: <?php echo $_SESSION['booking']['adults']?></p>
+                    <p>Number of Children: <?php echo $_SESSION['booking']['children']?></p>
+                    <p>Total Price: $<?php echo $_SESSION['booking']['price']['totalCost']?></p>
+                    <p>Includes GST: $<?php echo $_SESSION['booking']['price']['GST']?></p>
+                    <hr>
+                    <h2>Customer Information</h2>
+                    <p>Name: <?php echo $_SESSION['booking']['customer']['name']?></p>
+                    <p>Mobile: <?php echo $_SESSION['booking']['customer']['phone']?></p>
+                    <p>Email: <?php echo $_SESSION['booking']['customer']['email']?></p>
+                </div>
             </div>
         </page>
     </body>
