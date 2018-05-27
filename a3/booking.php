@@ -117,7 +117,7 @@ top_module("Booking", "booking-image", "", "button-primary", "", "");
                         }
                     }
                 }
-            calculateTotal($_SESSION['booking']['aid'], $_SESSION['booking']['days'], $_SESSION['booking']['adults'], $_SESSION['booking']['children'])
+            calculateTotal($_SESSION['booking']['aid'], $_SESSION['booking']['days'], $_SESSION['booking']['adults'], $_SESSION['booking']['children']);
 
             echo sprintf("%.2f", $totalPrice);
             echo "</p><p>Includes GST: ". sprintf("%.2f", $GST)
