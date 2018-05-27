@@ -29,7 +29,7 @@ function load() {
 		eM.value = localStorage.getItem("email");
 		rCBox.checked = true;
 		if(localStorage.getItem("mailCBx") == true) {
-			mcb.checked;
+			mcb.checked = true;
 		}
 	} 
 }
