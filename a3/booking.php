@@ -115,12 +115,12 @@ top_module("Booking", "booking-image", "", "button-primary", "", "");
                     }
                 }
 
-            echo round_to_2dp(calculateTotal($_SESSION['booking']['aid'], $_SESSION['booking']['days'], $_SESSION['booking']['adults'], $_SESSION['booking']['children']));
+            echo number_format((float)calculateTotal($_SESSION['booking']['aid'], $_SESSION['booking']['days'], $_SESSION['booking']['adults'], $_SESSION['booking']['children']), 2, '.', '');
         ?>
     <p>
     <p>Includes GST: 
         <?php
-            echo round_to_2dp((calculateTotal($_SESSION['booking']['aid'], $_SESSION['booking']['days'], $_SESSION['booking']['adults'], $_SESSION['booking']['children'])) / 10);
+            echo number_format((float)(calculateTotal($_SESSION['booking']['aid'], $_SESSION['booking']['days'], $_SESSION['booking']['adults'], $_SESSION['booking']['children'])) / 10, 2, '.', '');
         ?>
     <p>
 
