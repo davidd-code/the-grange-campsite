@@ -49,47 +49,47 @@ require_once("tools.php");
     <body class="dark-background">
         <page size="A4">
             <div class="container white-text">
-                <div class="content-padding text-left"><h1>Receipt</h1></div>
-                    <hr>
-                    <h2>Contact Information</h2>
-                    <p>The Grange Caravan Park</p>
-                    <p>Phone: 03 1234 5678</p>
-                    <p>Address: Portalington, VIC 3223</p>
-                    <p>Email Address: reception@thegrange.com.au</p>
-                    <h2>Booking information</h2>
-                    <p>Accommodation Type: 
-                        <?php
-                        switch($_SESSION['booking']['aid']) {
-                            case "US":
-                                echo "Unpowered Small Camping Site";
-                                break;
-                            case "UM":
-                                echo "Unpowered Medium Camping Site";
-                                break;
-                            case "PS":
-                                echo "Powered Small Camping Site";
-                                break;
-                            case "PM":
-                                echo "Powered Medium Camping Site";
-                                break;
-                            case "C":
-                                echo "Caravan Site";
-                                break;
-                        }
-                        ?>
-                    </p>
-                    <p>Arrival Date: <?php echo $_SESSION['booking']['date']?></p>
-                    <p>Number of Days: <?php echo $_SESSION['booking']['days']?></p>
-                    <p>Number of Adults: <?php echo $_SESSION['booking']['adults']?></p>
-                    <p>Number of Children: <?php echo $_SESSION['booking']['children']?></p>
-                    <p>Total Price: $<?php echo $_SESSION['price']['totalCost']?></p>
-                    <p>Includes GST: $<?php echo $_SESSION['price']['GST']?></p>
-                    <hr>
-                    <h2>Customer Information</h2>
-                    <p>Name: <?php echo $_SESSION['customer']['name']?></p>
-                    <p>Mobile: <?php echo $_SESSION['customer']['phone']?></p>
-                    <p>Email: <?php echo $_SESSION['customer']['email']?></p>
-                </div>
+                <h1>Receipt</h1>
+                <hr>
+                <h2>Contact Information</h2>
+                <p>The Grange Caravan Park</p>
+                <p>Phone: 03 1234 5678</p>
+                <p>Address: Portalington, VIC 3223</p>
+                <p>Email Address: reception@thegrange.com.au</p>
+                <h2>Booking information</h2>
+                <p>Accommodation Type: 
+                    <?php
+                    switch($_SESSION['booking']['aid']) {
+                        case "US":
+                            echo "Unpowered Small Camping Site";
+                            break;
+                        case "UM":
+                            echo "Unpowered Medium Camping Site";
+                            break;
+                        case "PS":
+                            echo "Powered Small Camping Site";
+                            break;
+                        case "PM":
+                            echo "Powered Medium Camping Site";
+                            break;
+                        case "C":
+                            echo "Caravan Site";
+                            break;
+                    }
+                    ?>
+                </p>
+                <p>Arrival Date: <?php echo $_SESSION['booking']['date']?></p>
+                <p>Number of Days: <?php echo $_SESSION['booking']['days']?></p>
+                <p>Number of Adults: <?php echo $_SESSION['booking']['adults']?></p>
+                <p>Number of Children: <?php echo $_SESSION['booking']['children']?></p>
+                <p>Total Price: $<?php echo $_SESSION['price']['totalCost']?></p>
+                <p>Includes GST: $<?php echo $_SESSION['price']['GST']?></p>
+                <hr>
+                <h2>Customer Information</h2>
+                <p>Name: <?php echo $_SESSION['customer']['name']?></p>
+                <p>Mobile: <?php echo $_SESSION['customer']['phone']?></p>
+                <p>Email: <?php echo $_SESSION['customer']['email']?></p>
+                
             </div>
         </page>
     </body>
