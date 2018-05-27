@@ -48,7 +48,10 @@ require_once("tools.php");
     <body class="dark-background">
         <page size="A4">
             <div class="white-text receipt-padding">
-                <h4>Receipt</h4>
+                <span>
+                    <h4>Receipt</h4>
+                    <img class="text-right" src="../media/blacklogo.png">
+                </span>
                 <hr>
                 <h4>Contact Information</h4>
                 <p>The Grange Caravan Park</p>
