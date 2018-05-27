@@ -39,4 +39,5 @@ top_module("Contact Us", "contact-background", "", "", "", "button-primary");
     <?php
     require_once("tools.php");
     bottom_module();
+    debug_module();
     ?>

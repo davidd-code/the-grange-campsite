@@ -80,21 +80,26 @@ OUTPUT;
                         Background image: Photo by Rahul Bhosale on Unsplash - https://unsplash.com/photos/yBgC-qVCxMg<br>
                     </div>
                 </footer>
+            </html>
+FOOTER;
+        echo $html;
+    }
+
+    function debug_module() {
+        $html = <<<"DEBUG"
+
                 <aside id='debug'>
                     <details open>
                         <summary>=Debug Show/Hide</summary>
                         <pre>
-                            '$_SESSION contains:'
-                                <?php print_r($_SESSION); ?>
+                            $_SESSION contains:
+                                print_r($_SESSION);
 
-                            '$_POST contains:'
-                                <?php print_r($_POST); ?>
+                            $_POST contains:
+                                print_r($_POST); 
                         </pre>
                     </details>
                 </aside>  
-
-            </html>
-FOOTER;
-        echo $html;
+DEBUG;
     }
 ?>

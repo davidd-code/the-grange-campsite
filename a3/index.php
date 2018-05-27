@@ -68,4 +68,5 @@ top_module("Welcome", "background-image", "button-primary", "", "", "");
     <?php
     require_once("tools.php");
     bottom_module();
+    debug_module();
     ?>

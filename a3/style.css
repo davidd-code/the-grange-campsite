@@ -322,3 +322,7 @@ body > page[size="A4"]	{
     display: none; 
   }
 }
+
+#debug {
+	color:white;
+}
