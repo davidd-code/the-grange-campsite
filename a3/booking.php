@@ -84,6 +84,7 @@ top_module("Booking", "booking-image", "", "button-primary", "", "");
                     );
                     
                     $pricePerDay = 0;
+                    global $totalPrice;
                     $totalPrice = 0;
                     global $GST;
                     $GST = 0;
