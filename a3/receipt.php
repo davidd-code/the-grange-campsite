@@ -101,7 +101,7 @@ require_once("tools.php");
 <?php
     $my_file = 'bookings.txt';
     $handle = fopen($my_file, 'a') or die('Cannot open file: '.$my_file);
-    $new_booking = $_SESSION['customer']['name']."\t".$_SESSION['customer']['email']."\t".$_SESSION['customer']['phone']."\t".$_SESSION['booking']['aid']."\t".$_SESSION['booking']['date']."\t".$_SESSION['booking']['days']."\t".$_SESSION['booking']['adults']."\t".$_SESSION['booking']['children']."\t".$_SESSION['price']['totalCost'];
+    $new_booking = "\n".$_SESSION['customer']['name']."\t".$_SESSION['customer']['email']."\t".$_SESSION['customer']['phone']."\t".$_SESSION['booking']['aid']."\t".$_SESSION['booking']['date']."\t".$_SESSION['booking']['days']."\t".$_SESSION['booking']['adults']."\t".$_SESSION['booking']['children']."\t".$_SESSION['price']['totalCost'];
     fwrite($handle, $new_booking);
     fclose($handle);
 ?>
