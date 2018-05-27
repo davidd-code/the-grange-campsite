@@ -278,14 +278,15 @@ button {
     padding-right:5em;
 }
 
-page {
+body> page {
+	background-color:#424C55;
 	display:block;
 	margin: 0 auto;
 	margin-bottom:0.5cm;
 	box-shadow: 0 0 0.5 rgba(0, 0, 0, 0.5);
 }
 
-page[size="A4"]	{
+body > page[size="A4"]	{
 	width:21cm;
 	height:29.7cm;
 }
