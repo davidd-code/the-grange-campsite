@@ -56,8 +56,7 @@ top_module("Booking", "booking-image", "", "button-primary", "", "");
             $pricePerDay = 0;
             $totalPrice = 0;
             $GST = 0;
-            $totalPeople = $adults + $children;
-            
+
             function calculateTotal($aid, $days, $adults, $children)    {
                     
                     $priceBook['cost'] = array (
@@ -88,7 +87,8 @@ top_module("Booking", "booking-image", "", "button-primary", "", "");
                         )
                     );
                     
-                    
+
+                    $totalPeople = $adults + $children;
                     
                     if(strcmp($aid, "C") == 0)  {
                         $pricePerDay += $priceBook['cost'][$aid]['price'];
@@ -120,7 +120,7 @@ top_module("Booking", "booking-image", "", "button-primary", "", "");
                 }
 
             echo (round(calculateTotal($_SESSION['booking']['aid'], $_SESSION['booking']['days'], $_SESSION['booking']['adults'], $_SESSION['booking']['children']), 2));
-            echo "</p><p>Includes GST: ". round($GST, 2);
+            echo "</p><p>Includes GST: ". round($GST, 2)
         ?>
     </p>
     <p>Includes GST: 
