@@ -95,12 +95,16 @@ FOOTER;
                         <summary>=Debug Show/Hide</summary>
                         <pre>
                             $_SESSION contains:
+                                <?php 
                                 print_r($_SESSION['booking']);
                                 print_r($_SESSION['customer']);
                                 print_r($_SESSION['price']);
+                                ?>
 
                             $_POST contains:
-                                print_r($_POST); 
+                                <?php
+                                    print_r($_POST);
+                                ?>
                         </pre>
                     </details>
                 </aside>  
