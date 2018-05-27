@@ -6,7 +6,9 @@ function load() {
 	var bookingName = document.getElementById("bookingName");
 	var bookingPhone = document.getElementById("bookingPhone");
 	var bookingEmail = document.getElementById("bookingEmail");
-	if(rCBox == "true")
+	var rCBox = document.getElementById("rmbrCBox");
+	var mcb = document.getElementById("mailCBx");
+	/*if(rCBox == "true")
 	{
 		if(mcb == "true")
 		{
@@ -19,13 +21,17 @@ function load() {
 		var bookingName = document.getElementById("bookingName");
 		var bookingPhone = document.getElementById("bookingPhone");
 		var bookingEmail = document.getElementById("bookingEmail");
-	}
+	}*/
 
-	/*if (typeof localStorage !== 'undefined') {
+	if (typeof localStorage !== 'undefined') {
     	name.value = localStorage.getItem("fullName");
 		ph.value = localStorage.getItem("mPhone");
 		eM.value = localStorage.getItem("email");
-	} */
+		bookingName.value = localStorage.getItem("fullName");
+		bookingPhone.value = localStorage.getItem("mPhone");
+		bookingEmail.value = localStorage.getItem("email");
+
+	} 
 }
 
 function save() {
