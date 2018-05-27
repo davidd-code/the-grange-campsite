@@ -121,8 +121,8 @@ top_module("Booking", "booking-image", "", "button-primary", "", "");
             
             $total = array (
             'totalCost' =>$totalPrice,
-            'email' =>$GST,
-            
+            'email' =>$GST);
+
             $_SESSION['price'] = $total;
         ?>
     </p>
