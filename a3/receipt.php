@@ -49,7 +49,7 @@ require_once("tools.php");
         <page size="A4">
             <div class="white-text receipt-padding">
                 <span>
-                    <h3>Receipt</h3>
+                    <h3 id="receipt-heading">Receipt</h3>
                     <img id="receipt-logo" class="text-right" src="../media/companyLogo.png">
                 </span>
                 <hr>

@@ -243,6 +243,10 @@ hr {
     height: auto;
 }
 
+#receipt-heading {
+	display:inline-block;
+}
+
 .receipt-padding {
 	padding:2em;
 }
