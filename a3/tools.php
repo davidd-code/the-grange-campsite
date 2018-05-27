@@ -1,6 +1,6 @@
 <?php
     session_start();
-    
+
     function top_module($pageTitle, $background, $p1, $p2, $p3, $p4) {
     $html = <<<"OUTPUT"
             <!DOCTYPE html>
@@ -94,10 +94,12 @@ FOOTER;
                     <details open>
                         <summary>=Debug Show/Hide</summary>
                         <pre>
-                            '$_SESSION contains:'
-                                print_r($_SESSION);
+                            "$_SESSION contains:"
+                                print_r($_SESSION['booking']);
+                                print_r($_SESSION['customer']);
+                                print_r($_SESSION['price']);
 
-                            '$_POST contains:'
+                            "$_POST contains:"
                                 print_r($_POST); 
                         </pre>
                     </details>
