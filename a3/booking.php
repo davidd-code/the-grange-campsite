@@ -47,10 +47,10 @@ top_module("Booking", "booking-image", "", "button-primary", "", "");
         }
         ?>
     <p>
-    <p>Arrival Date: <?php echo $_SESSION['booking']['date']?><p>
-    <p>Number of Days: <?php echo $_SESSION['booking']['days']?><p>
-    <p>Number of Adults: <?php echo $_SESSION['booking']['adults']?><p>
-    <p>Number of Children: <?php echo $_SESSION['booking']['children']?><p>
+    <p>Arrival Date: <?php echo $_SESSION['booking']['date']?></p>
+    <p>Number of Days: <?php echo $_SESSION['booking']['days']?></p>
+    <p>Number of Adults: <?php echo $_SESSION['booking']['adults']?></p>
+    <p>Number of Children: <?php echo $_SESSION['booking']['children']?></p>
     <p>Total Price: 
         <?php
             function calculateTotal($aid, $days, $adults, $children)    {
@@ -90,38 +90,39 @@ top_module("Booking", "booking-image", "", "button-primary", "", "");
                     
                     if(strcmp($aid, "C") == 0)  {
                         $pricePerDay += $priceBook['cost'][$aid]['price'];
+                        $GST = $totalPrice / 10;
                         echo $pricePerDay * $days;
                     }   else    {
                         if($totalPeople <= 2)   {
                             $pricePerDay += $priceBook['cost'][$aid]['price'];
                             $totalPrice = $days * $pricePerDay;
-                            echo $priceBook['cost'][$aid]['price'];
-                            echo $pricePerDay;
+                            $GST = $totalPrice / 10;
                             echo $totalPrice;
                         }   else    {
                             if($adults == 1)    {
                                 $pricePerDay += $priceBook['cost'][$aid]['price'];
                                 $pricePerDay += ($children -1) * $priceBook['cost'][$aid]['extraChild'];
                                 $totalPrice = $days * $pricePerDay;
+                                $GST = $totalPrice / 10;
                                 echo $totalPrice;
                             }   else    {
                                 $pricePerDay += $priceBook['cost'][$aid]['price'];
                                 $pricePerDay += ($adults - 2) * $priceBook['cost'][$aid]['extraAdult'];
                                 $pricePerDay += ($children) * $priceBook['cost'][$aid]['extraChild'];
                                 $totalPrice = $days * $pricePerDay;
+                                $GST = $totalPrice / 10;
                                 echo $totalPrice;
                             }
                         }
                     }
                 }
 
-            echo number_format((float)calculateTotal($_SESSION['booking']['aid'], $_SESSION['booking']['days'], $_SESSION['booking']['adults'], $_SESSION['booking']['children']), 2, '.', '');
+            echo (round(calculateTotal($_SESSION['booking']['aid'], $_SESSION['booking']['days'], $_SESSION['booking']['adults'], $_SESSION['booking']['children']), 2));
+            echo "</p><p>Includes GST: ". round($GST, 2);
         ?>
-    <p>
+    </p>
     <p>Includes GST: 
-        <?php
-            echo number_format((float)(calculateTotal($_SESSION['booking']['aid'], $_SESSION['booking']['days'], $_SESSION['booking']['adults'], $_SESSION['booking']['children'])) / 10, 2, '.', '');
-        ?>
+
     <p>
 
     <h3>Customer Information</h3>
