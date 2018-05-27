@@ -56,6 +56,8 @@
             if($totalPeople <= 2)   {
                 $pricePerDay += $priceBook['cost'][$aid]['price'];
                 $totalPrice = $days * $pricePerDay;
+                echo $priceBook['cost'][$aid]['price'];
+                echo $pricePerDay;
                 echo $totalPrice;
             }   else    {
                 if($adults == 1)    {
