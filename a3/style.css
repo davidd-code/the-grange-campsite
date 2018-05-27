@@ -266,6 +266,14 @@ button {
     padding-right:5em;
 }
 
+#accom-button {
+	background-color:#550c18 !important;
+    color:white !important;
+    border:none;
+    padding-left:5em;
+    padding-right:5em;
+}
+
 @media print {
   aside#debug {
     display: none; 
