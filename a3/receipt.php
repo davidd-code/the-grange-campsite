@@ -67,7 +67,9 @@ require_once("tools.php");
 
     <body class="dark-background">
         <page size="A4">
-            This is a receipt page
+            <div class="container white-text">
+                <div class="six columns content-padding"><h1>Invoice</h1></div>
+            </div>
         </page>
     </body>
 </html>
