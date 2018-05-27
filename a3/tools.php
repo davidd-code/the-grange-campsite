@@ -1,4 +1,6 @@
 <?php
+    session_start();
+    
     function top_module($pageTitle, $background, $p1, $p2, $p3, $p4) {
     $html = <<<"OUTPUT"
             <!DOCTYPE html>
