@@ -8,20 +8,7 @@ function load() {
 	var bookingEmail = document.getElementById("bookingEmail");
 	var rCBox = document.getElementById("rmbrCBox");
 	var mcb = document.getElementById("mailCBx");
-	/*if(rCBox == "true")
-	{
-		if(mcb == "true")
-		{
-			document.getElementById("mailCBx").checked = true;
-		}
-		document.getElementById("rmbrCBox").checked = true;
-		name.value = localStorage.getItem("fullName");
-		ph.value = localStorage.getItem("mPhone");
-		eM.value = localStorage.getItem("email");
-		var bookingName = document.getElementById("bookingName");
-		var bookingPhone = document.getElementById("bookingPhone");
-		var bookingEmail = document.getElementById("bookingEmail");
-	}*/
+
 
 	if (typeof localStorage !== 'undefined') {
     	name.value = localStorage.getItem("fullName");

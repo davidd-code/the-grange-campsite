@@ -10,7 +10,7 @@ top_module("Contact Us", "contact-background", "", "", "", "button-primary");
 <body onload="load()" class="dark-background">
     <div id="contact-form" class="container content-padding light-background">
         <h3>Get In Touch</h3>
-        <form id="contact_form" class="contact-form white-text" action="index.php" method="post" onsubmit="return validate()">
+        <form id="contact_form" class="contact-form white-text" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=contact" onsubmit="return validate()" method="post">
             <label class="white-text">
                 Name:<br>
                 <input id="fullName" class="form-width black-text" type="text" name="name" placeholder="Full Name" required/>
@@ -25,7 +25,7 @@ top_module("Contact Us", "contact-background", "", "", "", "button-primary");
             </label>
             <label class="white-text">
                 Message:<br>
-                <textarea id="cp-message" class="black-text" name="message" placeholder="Message" required/></textarea>
+                <textarea class="black-text" name="message" placeholder="Message" required/></textarea>
             </label>
             <label>
                 <input  id="mailCBx" type="checkbox" name="mailing" value="subscribe"> Sign up to our mailing list</input><br>
