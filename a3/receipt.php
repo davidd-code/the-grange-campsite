@@ -55,7 +55,7 @@ require_once("tools.php");
 
     <body class="dark-background">
         <page class="light-bacgkround" size="A4">
-            
+            This is a receipt page
         </page>
     </body>
 </html>
