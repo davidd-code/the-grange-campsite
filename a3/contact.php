@@ -30,7 +30,7 @@ top_module("Contact Us", "contact-background", "", "", "", "button-primary");
             <label>
                 <input type="checkbox" name="mailing" value="subscribe"> Sign up to our mailing list<br><br>
             </label>
-            <div><button id="submit-button" type="submit" value="submit" >Submit</button></div>
+            <div><button class="submit-button" type="submit" value="submit" >Submit</button></div>
         </form>
     </div>
 

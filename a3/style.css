@@ -250,7 +250,7 @@ button {
 }
 
 /* submit button styling on contact page */
-#submit-button {
+.submit-button {
     background-color:#550c18;
     color:white;
     border:none;

@@ -128,6 +128,25 @@ top_module("Booking", "booking-image", "", "button-primary", "", "");
 
     <h3>Customer Information</h3>
     <hr>
+    <form class="white-text" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=contact" method="post">
+            <label class="white-text">
+                Name:<br>
+                <input class="form-width black-text" type="text" name="name" placeholder="Full Name" required/>
+            </label>
+            <label class="white-text">
+                Phone Number:<br>
+                <input class="form-width black-text form-padding" type="text" name="phone" placeholder="Mobile Number" required/>
+            </label>
+            <label class="white-text">
+                Email Address:<br>
+                <input class="form-width black-text" type="text" name="email" placeholder="E-mail" required/>
+            </label>
+
+            <div>
+                <a class="button button-primary white-text" href="Accommodation.php">Cancel</a>
+                <button class="submit-button" type="submit" value="submit" >Confirm</button>
+            </div>
+        </form>
 </div>
 
 ?>
