@@ -93,9 +93,9 @@ FOOTER;
                     <details open>
                         <summary>=Debug Show/Hide</summary>
                         <pre>
-                            '$_SESSION contains'
+                            print_r($_SESSION);
 
-                            $_POST contains
+
 
                         </pre>
                     </details>
