@@ -50,7 +50,7 @@ require_once("tools.php");
             <div class="white-text receipt-padding">
                 <span>
                     <h3 id="receipt-heading">Receipt</h3>
-                    <img id="receipt-logo" class="text-right" src="../media/companyLogo.png">
+                    <img id="receipt-logo" class="text-right" src="../media/blacklogo.png">
                 </span>
                 <hr>
                 <h4>Contact Information</h4>

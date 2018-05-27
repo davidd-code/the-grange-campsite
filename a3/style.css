@@ -205,7 +205,7 @@ p {
 
 hr {
 	margin-top:2px;
-	margin-bottom:0.5rem;
+	margin-bottom:1rem;
 }
 
 .text-left {
@@ -239,8 +239,9 @@ hr {
     display: inline-block;
     padding: 0;
     overflow: hidden;
-    width: 180px;
+    width: 182px;
     height: auto;
+    vertical-align: bottom;
 }
 
 #receipt-heading {
