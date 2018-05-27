@@ -128,7 +128,7 @@ top_module("Booking", "booking-image", "", "button-primary", "", "");
 
     <h3>Customer Information</h3>
     <hr>
-    <form class="white-text" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=contact" method="post">
+    <form class="white-text" action="receipt.php" method="post">
             <label class="white-text">
                 Name:<br>
                 <input class="form-width black-text" type="text" name="name" placeholder="Full Name" required/>
