@@ -82,15 +82,16 @@ require_once("tools.php");
                     <p>Number of Days: <?php echo $_SESSION['booking']['days']?></p>
                     <p>Number of Adults: <?php echo $_SESSION['booking']['adults']?></p>
                     <p>Number of Children: <?php echo $_SESSION['booking']['children']?></p>
-                    <p>Total Price: $<?php echo $_SESSION['booking']['price']['totalCost']?></p>
-                    <p>Includes GST: $<?php echo $_SESSION['booking']['price']['GST']?></p>
+                    <p>Total Price: $<?php echo $_SESSION['price']['totalCost']?></p>
+                    <p>Includes GST: $<?php echo $_SESSION['price']['GST']?></p>
                     <hr>
                     <h2>Customer Information</h2>
-                    <p>Name: <?php echo $_SESSION['booking']['customer']['name']?></p>
-                    <p>Mobile: <?php echo $_SESSION['booking']['customer']['phone']?></p>
-                    <p>Email: <?php echo $_SESSION['booking']['customer']['email']?></p>
+                    <p>Name: <?php echo $_SESSION['customer']['name']?></p>
+                    <p>Mobile: <?php echo $_SESSION['customer']['phone']?></p>
+                    <p>Email: <?php echo $_SESSION['customer']['email']?></p>
                 </div>
             </div>
         </page>
     </body>
 </html>
+Array ( [booking] => Array ( [aid] => PS [date] => 2018-05-11 [days] => 2 [adults] => 5 [children] => 4 ) [price] => Array ( [totalCost] => 200.5 [GST] => 20.05 ) [customer] => Array ( [name] => David Doan [email] => daavid.doan@gmail.com [phone] => 0411332707 ) )
