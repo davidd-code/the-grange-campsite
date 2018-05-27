@@ -250,7 +250,15 @@ button {
 }
 
 /* submit button styling on contact page */
-.submit-button {
+#submit-button {
+    background-color:#550c18 !important;
+    color:white !important;
+    border:none;
+    padding-left:5em;
+    padding-right:5em;
+}
+
+#booking-button {
     background-color:#550c18 !important;
     color:white !important;
     border:none;

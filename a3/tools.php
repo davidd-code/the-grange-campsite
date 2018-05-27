@@ -39,7 +39,7 @@
             </head>
             
             <header class=$background>
-	           <a href="index.html">
+	           <a href="index.php">
         	       <img class="logo" src="../media/companyLogo.png" alt="Simplified fireplace with text saying the Grange under it">
 	           </a>
                 

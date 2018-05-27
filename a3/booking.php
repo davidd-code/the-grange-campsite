@@ -143,8 +143,8 @@ top_module("Booking", "booking-image", "", "button-primary", "", "");
             </label>
 
             <div>
-                <a class="button button-primary white-text" href="Accommodation.php">Cancel</a>
-                <button class="submit-button" type="submit" value="submit" >Confirm</button>
+                <a class="button button-primary white-text" href="accommodation.php">Cancel</a>
+                <button id="booking-button" type="submit" value="submit" >Confirm</button>
             </div>
         </form>
 </div>
