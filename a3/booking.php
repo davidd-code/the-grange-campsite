@@ -157,6 +157,8 @@ top_module("Booking", "booking-image", "", "button-primary", "", "");
 
 <?php
     require_once("tools.php");
-        bottom_module();
+    bottom_module();
+    debug_module();
+    debug_bot_module();
 ?>
 

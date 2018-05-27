@@ -65,9 +65,9 @@ top_module("Welcome", "background-image", "button-primary", "", "", "");
     <!-- End Document
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-    <?php
-    require_once("tools.php");
-    bottom_module();
-    debug_module();
-    debug_bot_module();
-    ?>
+<?php
+require_once("tools.php");
+bottom_module();
+debug_module();
+debug_bot_module();
+?>

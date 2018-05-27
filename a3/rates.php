@@ -69,9 +69,8 @@ top_module("Rates", "rates-background", "", "", "button-primary", "");
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 <?php
-require_once("tools.php");
-bottom_module();
-debug_module();
+    require_once("tools.php");
+    bottom_module();
+    debug_module();
+    debug_bot_module();
 ?>
-
-

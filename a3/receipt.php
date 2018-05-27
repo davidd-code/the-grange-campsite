@@ -105,3 +105,10 @@ require_once("tools.php");
     fwrite($handle, $new_booking);
     fclose($handle);
 ?>
+
+<?php
+    require_once("tools.php");
+    bottom_module();
+    debug_module();
+    debug_bot_module();
+?>

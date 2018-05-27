@@ -95,8 +95,8 @@ FOOTER;
                         <pre>
 DEBUG;
         echo $html;
-        echo '$_SESSION contains'.print_r($_SESSION);
-        echo '$_POST contains'.print_r($_POST);
+        print_r($_SESSION);
+        print_r($_POST);
     }
 
     function debug_bot_module() {
