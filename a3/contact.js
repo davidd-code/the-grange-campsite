@@ -1,24 +1,22 @@
 function load() {
 	
+	var rCBox = localStorage.getItem("rmbrCBox");
+	var mcb = localStorage.getItem("mailCBx");
 	var name = document.getElementById("fullName");
 	var ph = document.getElementById("mPhone");
 	var eM= document.getElementById("email");
-	var bookingName = document.getElementById("bookingName");
-	var bookingPhone = document.getElementById("bookingPhone");
-	var bookingEmail = document.getElementById("bookingEmail");
-	var rCBox = document.getElementById("rmbrCBox");
-	var mcb = document.getElementById("mailCBx");
-
-
-	if (typeof localStorage !== 'undefined') {
-    	name.value = localStorage.getItem("fullName");
+	
+	if(rCBox == "true")
+	{
+		if(mcb == "true")
+		{
+			document.getElementById("mailCBx").checked = true;
+		}
+		document.getElementById("rmbrCBox").checked = true;
+		name.value = localStorage.getItem("fullName");
 		ph.value = localStorage.getItem("mPhone");
 		eM.value = localStorage.getItem("email");
-		rCBox.checked = true;
-		if(localStorage.getItem("mailCBx") == 'true') {
-			mcb.checked = true;
-		}
-	} 
+	}
 }
 
 function loadBooking()	{
