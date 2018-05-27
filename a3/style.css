@@ -230,6 +230,12 @@ hr {
 	padding: 3em;
 }
 
+#receipt-logo {
+	overflow:hidden;
+	width:100%;
+	height:auto;
+}
+
 .receipt-padding {
 	padding:2em;
 }
