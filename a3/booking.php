@@ -9,7 +9,6 @@
         'children' =>$_POST['children']
     );
 
-    print_r($_SESSION);
 
 
 require_once("tools.php");
@@ -18,7 +17,7 @@ top_module("Booking", "booking-image", "", "button-primary", "", "");
 
 <!-- Primary Page Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<body onload="load()" class="dark-background">
+<body onload="loadBooking()" class="dark-background">
     <div class="container content-padding light-background">
         <h3>Your Booking Details</h3>
         <hr>

@@ -27,10 +27,20 @@ function load() {
     	name.value = localStorage.getItem("fullName");
 		ph.value = localStorage.getItem("mPhone");
 		eM.value = localStorage.getItem("email");
+		rCBox.checked = true;
+		
+	} 
+}
+
+function loadBooking()	{
+	bookingName.value = localStorage.getItem("fullName");
+	bookingPhone.value = localStorage.getItem("mPhone");
+	bookingEmail.value = localStorage.getItem("email");
+
+	if (typeof localStorage !== 'undefined') {
 		bookingName.value = localStorage.getItem("fullName");
 		bookingPhone.value = localStorage.getItem("mPhone");
 		bookingEmail.value = localStorage.getItem("email");
-
 	} 
 }
 
