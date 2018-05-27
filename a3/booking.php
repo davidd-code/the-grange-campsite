@@ -132,15 +132,15 @@ top_module("Booking", "booking-image", "", "button-primary", "", "");
     <form class="white-text" action="receipt.php" method="post">
             <label class="white-text">
                 Name:<br>
-                <input class="form-width black-text" type="text" name="name" placeholder="Full Name" required/>
+                <input id="fullName" class="form-width black-text" type="text" name="name" placeholder="Full Name" required/>
             </label>
             <label class="white-text">
                 Phone Number:<br>
-                <input class="form-width black-text form-padding" type="text" name="phone" placeholder="Mobile Number" required/>
+                <input id="mPhone" class="form-width black-text form-padding" type="text" name="phone" placeholder="Mobile Number" required/>
             </label>
             <label class="white-text">
                 Email Address:<br>
-                <input class="form-width black-text" type="text" name="email" placeholder="E-mail" required/>
+                <input id="email" class="form-width black-text" type="text" name="email" placeholder="E-mail" required/>
             </label>
 
             <div>
