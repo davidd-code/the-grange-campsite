@@ -13,7 +13,7 @@
             'phone' =>$_POST['phone']
         )
     );
-print_r($_POST);
+print_r($_SESSION);
 require_once("tools.php");
 top_module("Booking", "booking-image", "", "button-primary", "", "");
 ?>
