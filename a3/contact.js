@@ -1,12 +1,12 @@
 function load() {
 	
-	var rCBox = localStorage.getItem("rmbrCBox");
-	var mcb = localStorage.getItem("mailCBx");
 	var name = document.getElementById("fullName");
 	var ph = document.getElementById("mPhone");
 	var eM= document.getElementById("email");
-	
-	/*if(rCBox == "true")
+	var bookingName = document.getElementById("bookingName");
+	var bookingPhone = document.getElementById("bookingPhone");
+	var bookingEmail = document.getElementById("bookingEmail");
+	if(rCBox == "true")
 	{
 		if(mcb == "true")
 		{
@@ -16,13 +16,16 @@ function load() {
 		name.value = localStorage.getItem("fullName");
 		ph.value = localStorage.getItem("mPhone");
 		eM.value = localStorage.getItem("email");
-	}*/
+		var bookingName = document.getElementById("bookingName");
+		var bookingPhone = document.getElementById("bookingPhone");
+		var bookingEmail = document.getElementById("bookingEmail");
+	}
 
-	if (typeof localStorage !== 'undefined') {
+	/*if (typeof localStorage !== 'undefined') {
     	name.value = localStorage.getItem("fullName");
 		ph.value = localStorage.getItem("mPhone");
 		eM.value = localStorage.getItem("email");
-	} 
+	} */
 }
 
 function save() {

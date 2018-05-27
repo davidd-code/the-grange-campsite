@@ -18,7 +18,7 @@ top_module("Booking", "booking-image", "", "button-primary", "", "");
 
 <!-- Primary Page Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<body class="dark-background">
+<body onload="load()" class="dark-background">
     <div class="container content-padding light-background">
         <h3>Your Booking Details</h3>
         <hr>
@@ -133,15 +133,15 @@ top_module("Booking", "booking-image", "", "button-primary", "", "");
         <form class="white-text" action="receipt.php" method="post">
                 <label class="white-text">
                     Name:<br>
-                    <input id="fullName" class="form-width black-text" type="text" name="name" placeholder="Full Name" required/>
+                    <input id="bookingName" class="form-width black-text" type="text" name="name" placeholder="Full Name" required/>
                 </label>
                 <label class="white-text">
                     Phone Number:<br>
-                    <input id="mPhone" class="form-width black-text form-padding" type="text" name="phone" placeholder="Mobile Number" required/>
+                    <input id="bookingPhone" class="form-width black-text form-padding" type="text" name="phone" placeholder="Mobile Number" required/>
                 </label>
                 <label class="white-text">
                     Email Address:<br>
-                    <input id="email" class="form-width black-text" type="text" name="email" placeholder="E-mail" required/>
+                    <input id="bookingEmail" class="form-width black-text" type="text" name="email" placeholder="E-mail" required/>
                 </label>
 
                 <div>
