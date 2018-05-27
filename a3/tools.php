@@ -95,7 +95,9 @@ FOOTER;
                         <pre>
 DEBUG;
         echo $html;
+        echo '$_SESSION contains';
         print_r($_SESSION);
+        echo '$_POST contains';
         print_r($_POST);
     }
 
