@@ -1,7 +1,7 @@
 <?php
 session_start();
     
-    $_SESSION['cp-message'] = $_POST['cp-message']
+    $_SESSION['cp-message'] = $_POST['cp-message'];
     $wantsMail = $_POST['mailCBx'];
     if(isset($_SESSION['cp-message'])) {
         echo "<div class="white-text">Your message has been received."."\n";
