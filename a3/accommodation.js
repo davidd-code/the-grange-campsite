@@ -14,6 +14,7 @@ function US() {
         c.style.display="none";
         d.style.display="none";
         e.style.display="none";
+        document.getElementById("accom-button").disabled = true;
     } else {
         document.getElementById("aid").value = "US";
         f.style.display="none";	
@@ -22,6 +23,7 @@ function US() {
         c.style.display="none";
         d.style.display="none";
         e.style.display="none";
+        document.getElementById("accom-button").disabled = false;
     }
 }
 
@@ -40,6 +42,7 @@ function PS() {
         c.style.display="none";
         d.style.display="none";
         e.style.display="none";
+        document.getElementById("accom-button").disabled = true;
     } else {
         document.getElementById("aid").value = "PS";
         f.style.display="none";	
@@ -48,6 +51,7 @@ function PS() {
         c.style.display="none";
         d.style.display="none";
         e.style.display="none";
+        document.getElementById("accom-button").disabled = false;
     }
 }
 
@@ -66,6 +70,7 @@ function UM() {
         b.style.display="none";
         d.style.display="none";
         e.style.display="none";
+        document.getElementById("accom-button").disabled = true;
     } else {
         document.getElementById("aid").value = "UM";
         f.style.display="none";	
@@ -74,6 +79,7 @@ function UM() {
         a.style.display="none";
         d.style.display="none";
         e.style.display="none";
+        document.getElementById("accom-button").disabled = false;
     }
 }
 
@@ -92,6 +98,7 @@ function PM() {
         c.style.display="none";
         a.style.display="none";
         e.style.display="none";
+        document.getElementById("accom-button").disabled = true;
     } else {
         document.getElementById("aid").value = "PM";
         f.style.display="none";	
@@ -100,6 +107,7 @@ function PM() {
         c.style.display="none";
         a.style.display="none";
         e.style.display="none";
+        document.getElementById("accom-button").disabled = false;
     }
 }
 
@@ -118,8 +126,10 @@ function C() {
         c.style.display="none";
         d.style.display="none";
         a.style.display="none";
+        document.getElementById("accom-button").disabled = true;
     } else {
         document.getElementById("aid").value = "C";
+        document.getElementById("accom-button").disabled = false;
         e.style.display="block";
         f.style.display="none";	
         b.style.display="none";
@@ -128,6 +138,7 @@ function C() {
         a.style.display="none";
     }
 }
+
 
 var priceBook = {
     minAdult: 1,
