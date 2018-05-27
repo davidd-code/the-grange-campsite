@@ -14,65 +14,7 @@
         )*/
     );
 
-    function calculateTotal($aid, $days, $adults, $children)    {
-        
-        $priceBook['cost'] = array (
-            'US' => array   (
-                'price' => 35.25,
-                'extraAdult' => 10,
-                'extraChild' => 5,
-            ),
-            'UM' => array   (
-                'price' => 40.50,
-                'extraAdult' => 10,
-                'extraChild' => 5,
-            ),
-            'PS' => array   (
-                'price' => 50.25,
-                'extraAdult' => 10,
-                'extraChild' => 5,
-            ),
-            'PM' => array   (
-                'price' => 60.50,
-                'extraAdult' => 10,
-                'extraChild' => 5,
-            ),
-            'C' => array   (
-                'price' => 100,
-                'extraAdult' => 0,
-                'extraChild' => 0,
-            )
-        );
-        
-        $pricePerDay = 0;
-        $totalPrice = 0;
-        $GST = 0;
-        $totalPeople = $adults + $children;
-        
-        if(strcmp($aid, "C") == 0)  {
-            $pricePerDay += $priceBook['cost'][$aid]['price'];
-            echo $pricePerDay * $days;
-        }   else    {
-            if($totalPeople <= 2)   {
-                $pricePerDay += $priceBook['cost'][$aid]['price'];
-                $totalPrice = $days * $pricePerDay;
-                echo $priceBook['cost'][$aid]['price'];
-                echo $pricePerDay;
-                echo $totalPrice;
-            }   else    {
-                if($adults == 1)    {
-                    $pricePerDay += ($children -1) * $priceBook['cost'][$aid]['extraChild'];
-                    $totalPrice = $days * $pricePerDay;
-                    echo $totalPrice;
-                }   else    {
-                    $pricePerDay += ($adults - 2) * $priceBook['cost'][$aid]['extraAdult'];
-                    $pricePerDay += ($children) * $priceBook['cost'][$aid]['extraChild'];
-                    $totalPrice = $days * $pricePerDay;
-                    echo $totalPrice;
-                }
-            }
-        }
-    }
+
 
 
 require_once("tools.php");
@@ -111,6 +53,66 @@ top_module("Booking", "booking-image", "", "button-primary", "", "");
     <p>Number of Children: <?php echo $_SESSION['booking']['children']?><p>
     <p>Total Price: 
         <?php
+            function calculateTotal($aid, $days, $adults, $children)    {
+                    
+                    $priceBook['cost'] = array (
+                        'US' => array   (
+                            'price' => 35.25,
+                            'extraAdult' => 10,
+                            'extraChild' => 5,
+                        ),
+                        'UM' => array   (
+                            'price' => 40.50,
+                            'extraAdult' => 10,
+                            'extraChild' => 5,
+                        ),
+                        'PS' => array   (
+                            'price' => 50.25,
+                            'extraAdult' => 10,
+                            'extraChild' => 5,
+                        ),
+                        'PM' => array   (
+                            'price' => 60.50,
+                            'extraAdult' => 10,
+                            'extraChild' => 5,
+                        ),
+                        'C' => array   (
+                            'price' => 100,
+                            'extraAdult' => 0,
+                            'extraChild' => 0,
+                        )
+                    );
+                    
+                    $pricePerDay = 0;
+                    $totalPrice = 0;
+                    $GST = 0;
+                    $totalPeople = $adults + $children;
+                    
+                    if(strcmp($aid, "C") == 0)  {
+                        $pricePerDay += $priceBook['cost'][$aid]['price'];
+                        echo $pricePerDay * $days;
+                    }   else    {
+                        if($totalPeople <= 2)   {
+                            $pricePerDay += $priceBook['cost'][$aid]['price'];
+                            $totalPrice = $days * $pricePerDay;
+                            echo $priceBook['cost'][$aid]['price'];
+                            echo $pricePerDay;
+                            echo $totalPrice;
+                        }   else    {
+                            if($adults == 1)    {
+                                $pricePerDay += ($children -1) * $priceBook['cost'][$aid]['extraChild'];
+                                $totalPrice = $days * $pricePerDay;
+                                echo $totalPrice;
+                            }   else    {
+                                $pricePerDay += ($adults - 2) * $priceBook['cost'][$aid]['extraAdult'];
+                                $pricePerDay += ($children) * $priceBook['cost'][$aid]['extraChild'];
+                                $totalPrice = $days * $pricePerDay;
+                                echo $totalPrice;
+                            }
+                        }
+                    }
+                }
+
             echo calculateTotal($_SESSION['booking']['aid'], $_SESSION['booking']['days'], $_SESSION['booking']['adults'], $_SESSION['booking']['children'])
         ?>
     <p>
