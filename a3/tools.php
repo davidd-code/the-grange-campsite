@@ -101,5 +101,6 @@ FOOTER;
                     </details>
                 </aside>  
 DEBUG;
+        echo $html;
     }
 ?>
