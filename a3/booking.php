@@ -117,11 +117,11 @@ top_module("Booking", "booking-image", "", "button-primary", "", "");
 
             calculateTotal($_SESSION['booking']['aid'], $_SESSION['booking']['days'], $_SESSION['booking']['adults'], $_SESSION['booking']['children']);
 
-            echo "</p><p>Includes GST: ". sprintf("%.2f", $GST)
+            echo "</p><p>Includes GST: ". sprintf("%.2f", $GST);
             
             $total = array (
-            'totalCost' =>$totalPrice,
-            'email' =>$GST);
+                    'totalCost' =>$totalPrice,
+                    'email' =>$GST);
 
             $_SESSION['price'] = $total;
         ?>

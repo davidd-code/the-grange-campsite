@@ -54,7 +54,7 @@ require_once("tools.php");
     <hr>    
 
     <body class="dark-background">
-        <page class="light-background" size="A4">
+        <page class="light-bacgkround" size="A4">
             
         </page>
     </body>
