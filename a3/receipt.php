@@ -47,7 +47,7 @@ require_once("tools.php");
 
     <body class="dark-background">
         <page size="A4">
-            <div class="white-text">
+            <div class="white-text content-padding">
                 <h4>Receipt</h4>
                 <hr>
                 <h4>Contact Information</h4>
@@ -55,6 +55,7 @@ require_once("tools.php");
                 <p>Phone: 03 1234 5678</p>
                 <p>Address: Portalington, VIC 3223</p>
                 <p>Email Address: reception@thegrange.com.au</p>
+                <hr>
                 <h4>Booking information</h4>
                 <p>Accommodation Type: 
                     <?php
