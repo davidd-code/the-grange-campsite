@@ -226,6 +226,10 @@ p {
 	padding: 3em;
 }
 
+.receipt-padding {
+	padding:2em;
+}
+
 /* used to make inputs align neatly */
 .form-width {
     width:45%;

@@ -47,7 +47,7 @@ require_once("tools.php");
 
     <body class="dark-background">
         <page size="A4">
-            <div class="white-text content-padding">
+            <div class="white-text receipt-padding">
                 <h4>Receipt</h4>
                 <hr>
                 <h4>Contact Information</h4>
