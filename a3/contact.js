@@ -56,3 +56,38 @@ function checkStatus(){
 		remove();
 	}
 }
+
+function autofillBooking() {
+	var rCBox = localStorage.getItem("rmbrCBox");
+	if(rCBox == "true")
+	{
+		var name = document.getElementById("fullName");
+		var ph = document.getElementById("mPhone");
+		var eM= document.getElementById("email");
+		
+		name.value = localStorage.getItem("fullName");
+		ph.value = localStorage.getItem("mPhone");
+		eM.value = localStorage.getItem("email");
+	}
+}
+
+function validate() {
+	var regex = /[\.|[a-z]|\s|\-|\'/gi;
+	var name = document.getElementById("fullName");
+	if(!name.test(regex)) {
+		alert("Invalid name; Can only contains letters ' . and - characters");
+		name.focus();
+		name.style.border = "solid 2px red";
+		return false;
+	}
+
+	var regex1 = /\+614\d{8}|04\d{8}/g;
+	var ph = document.getElementById("mPhone");
+	if(!ph.test(regex1)) {
+		alert("Must enter an Australian mobile number");
+		ph.focus();
+		ph.style.border = "solid 2px border";
+		return false;
+	}
+	
+}
