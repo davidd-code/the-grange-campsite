@@ -104,12 +104,10 @@ function validate() {
 	var nameResult = regex.test(name.value);
 	if(nameResult ==false) {
 		alert("Invalid name; Can only contains letters ' . and - characters");
-		name.focus();
 		name.style.border = "solid 2px red";
 		return false;
 	}
 	if(nameResult ==true){
-		name.unfocus();
 		name.style.border = "none";
 	}
 
@@ -118,16 +116,13 @@ function validate() {
 	var phResult = regex1.test(ph.value);
 	if(phResult==false) {
 		alert("Must enter an Australian mobile number");
-		ph.focus();
-		ph.style.border = "solid 2px border";
+		ph.style.border = "solid 2px red";
 		return false;
 	}
 	if(phResult==true)
 	{
-		ph.unfocus();
 		ph.style.border = "none";
 	}
 	return true;
 	
 }
-
