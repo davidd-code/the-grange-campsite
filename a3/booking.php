@@ -115,12 +115,12 @@ top_module("Booking", "booking-image", "", "button-primary", "", "");
                     }
                 }
 
-            echo calculateTotal($_SESSION['booking']['aid'], $_SESSION['booking']['days'], $_SESSION['booking']['adults'], $_SESSION['booking']['children'])
+            echo calculateTotal($_SESSION['booking']['aid'], $_SESSION['booking']['days'], $_SESSION['booking']['adults'], $_SESSION['booking']['children']);
         ?>
     <p>
     <p>Includes GST: 
         <?php
-            echo $totalPrice / 10;
+            echo calculateTotal($_SESSION['booking']['aid'], $_SESSION['booking']['days'], $_SESSION['booking']['adults'], $_SESSION['booking']['children']) / 10;
         ?>
     <p>
 
