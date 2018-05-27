@@ -49,8 +49,8 @@ require_once("tools.php");
         <page size="A4">
             <div class="white-text receipt-padding">
                 <span>
-                    <h4>Receipt</h4>
-                    <img id="receipt-logo" class="text-right" src="../media/blacklogo.png">
+                    <h3>Receipt</h3>
+                    <img id="receipt-logo" class="text-right" src="../media/companyLogo.png">
                 </span>
                 <hr>
                 <h4>Contact Information</h4>
