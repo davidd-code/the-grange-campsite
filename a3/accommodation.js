@@ -1,7 +1,3 @@
-function disableBook () {
-    document.getElementById("accom-button").disabled = true;
-}
-
 function US() {
     var a = document.getElementById("US");
     var b = document.getElementById("PS");
