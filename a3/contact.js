@@ -28,7 +28,9 @@ function load() {
 		ph.value = localStorage.getItem("mPhone");
 		eM.value = localStorage.getItem("email");
 		rCBox.checked = true;
-		
+		if(localStore.getItem("mailCBx") == true) {
+			mcb.checked;
+		}
 	} 
 }
 
