@@ -9,7 +9,7 @@
         'children' =>$_POST['children']
     );
 
-
+    print_r($_SESSION);
 
 
 require_once("tools.php");
