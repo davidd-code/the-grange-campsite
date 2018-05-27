@@ -11,11 +11,11 @@ top_module("Accommodation", "accommodation-background", "", "button-primary", ""
 <div class="text-center">
     <button onclick="US(); calculatePrice()" class="white-text">Small Unpowered Site</button>
 
-    <button onclick="PS(); calculatePrice()" class="white-text">Small Powered Site</button>
-
     <button onclick="UM(); calculatePrice()" class="white-text">Medium Unpowered Site</button>
 
-    <button onclick="PM(); calculatePrice(); calculatePrice()" class="white-text">Medium Powered Site</button>
+    <button onclick="PS(); calculatePrice()" class="white-text">Small Powered Site</button>
+
+    <button onclick="PM(); calculatePrice()" class="white-text">Medium Powered Site</button>
 
     <button onclick="C(); calculatePrice()" class="white-text">Caravan Sites</button>
 </div>
@@ -201,7 +201,7 @@ top_module("Accommodation", "accommodation-background", "", "button-primary", ""
             <span class="white-text">Includes GST: $</span>
             <span id="GST" class="white-text"></span>
             
-            <div><button id="submit-button" type="submit" value="submit" >Book</button></div>
+            <div><button id="accom-button" type="submit" value="submit" >Book</button></div>
         </form>
     </div>
 </div>
