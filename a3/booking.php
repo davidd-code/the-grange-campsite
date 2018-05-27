@@ -6,7 +6,7 @@
         'date' =>$_POST['date'],
         'days' =>$_POST['days'],
         'adults' =>$_POST['adults'],
-        'children' =>$_POST['children']z`
+        'children' =>$_POST['children']
     );
 
 
