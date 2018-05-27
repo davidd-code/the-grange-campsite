@@ -4,7 +4,7 @@ session_start();
     $_SESSION['cp-message'] = $_POST['cp-message'];
     $wantsMail = $_POST['mailCBx'];
     if(isset($_SESSION['cp-message'])) {
-        echo "<div class="white-text">Your message has been received."."\n";
+        echo "<div class='white-text'>Your message has been received."."\n";
         if($wantsMail == true)  {
             echo 'You are now on our mailing list.' ."\n";
 
