@@ -1,5 +1,4 @@
 <?php
-    session_start();
 
     function top_module($pageTitle, $background, $p1, $p2, $p3, $p4) {
     $html = <<<"OUTPUT"
@@ -94,7 +93,9 @@ FOOTER;
                     <details open>
                         <summary>=Debug Show/Hide</summary>
                         <pre>
-                            
+                            '$_SESSION contains'
+
+                            $_POST contains
 
                         </pre>
                     </details>
