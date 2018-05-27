@@ -86,7 +86,7 @@ top_module("Booking", "booking-image", "", "button-primary", "", "");
                     $pricePerDay = 0;
                     $totalPrice = 0;
                     global $GST;
-                    GST = 0;
+                    $GST = 0;
                     $totalPeople = $adults + $children;
                     
                     if(strcmp($aid, "C") == 0)  {
