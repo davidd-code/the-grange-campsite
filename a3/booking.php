@@ -100,10 +100,12 @@ top_module("Booking", "booking-image", "", "button-primary", "", "");
                             echo $totalPrice;
                         }   else    {
                             if($adults == 1)    {
+                                $pricePerDay += $priceBook['cost'][$aid]['price'];
                                 $pricePerDay += ($children -1) * $priceBook['cost'][$aid]['extraChild'];
                                 $totalPrice = $days * $pricePerDay;
                                 echo $totalPrice;
                             }   else    {
+                                $pricePerDay += $priceBook['cost'][$aid]['price'];
                                 $pricePerDay += ($adults - 2) * $priceBook['cost'][$aid]['extraAdult'];
                                 $pricePerDay += ($children) * $priceBook['cost'][$aid]['extraChild'];
                                 $totalPrice = $days * $pricePerDay;
