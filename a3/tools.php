@@ -32,6 +32,7 @@
                 <!-- JavaScript
             –––––––––––––––––––––––––––––––––––––––––––––––––– -->
                     <script type="text/javascript" src="accommodation.js"></script>
+                    <script type="text/javascript" src="contact.js"></script>
 
                 <!-- The Grange
             –––––––––––––––––––––––––––––––––––––––––––––––––– -->
