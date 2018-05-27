@@ -1,5 +1,20 @@
 <?php
 session_start();
+    
+    $_SESSION['cp-message'] = $_POST['cp-message']
+    $wantsMail = $_POST['mailCBx'];
+    if(isset($_SESSION['cp-message'])) {
+        echo "<div class="white-text">Your message has been received."."\n";
+        if($wantsMail == true)  {
+            echo 'You are now on our mailing list.' ."\n";
+
+            $my_file = 'mailing.txt';
+            $handle = fopen($my_file, 'a') or die('Cannot open file: '.$my_file);
+            $new_mail = "\n".$_SESSION['customer']['name']."\t".$_SESSION['customer']['email']."\t".$_SESSION['customer']['phone'];
+            fwrite($handle, $new_booking);
+            fclose($handle);
+        }
+    }
 
 require_once("tools.php");
 top_module("Welcome", "background-image", "button-primary", "", "", "");

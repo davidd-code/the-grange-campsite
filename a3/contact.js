@@ -28,7 +28,7 @@ function load() {
 		ph.value = localStorage.getItem("mPhone");
 		eM.value = localStorage.getItem("email");
 		rCBox.checked = true;
-		if(localStorage.getItem("mailCBx") == true) {
+		if(localStorage.getItem("mailCBx") == 'true') {
 			mcb.checked = true;
 		}
 	} 
@@ -101,20 +101,33 @@ function autofillBooking() {
 function validate() {
 	var regex = /[\.|[a-z]|\s|\-|\'/gi;
 	var name = document.getElementById("fullName");
-	if(!name.test(regex)) {
+	var nameResult = regex.test(name.value);
+	if(nameResult ==false) {
 		alert("Invalid name; Can only contains letters ' . and - characters");
 		name.focus();
 		name.style.border = "solid 2px red";
 		return false;
 	}
+	if(nameResult ==true){
+		name.unfocus();
+		name.style.border = "none";
+	}
 
 	var regex1 = /\+614\d{8}|04\d{8}/g;
 	var ph = document.getElementById("mPhone");
-	if(!ph.test(regex1)) {
+	var phResult = regex1.test(ph.value);
+	if(phResult==false) {
 		alert("Must enter an Australian mobile number");
 		ph.focus();
 		ph.style.border = "solid 2px border";
 		return false;
 	}
+	if(phResult==true)
+	{
+		ph.unfocus();
+		ph.style.border = "none";
+	}
+	return true;
 	
 }
+
