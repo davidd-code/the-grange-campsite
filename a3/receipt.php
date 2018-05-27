@@ -50,10 +50,22 @@ require_once("tools.php");
         <a href="index.php">
             <img class="logo" src="../media/companyLogo.png" alt="Simplified fireplace with text saying the Grange under it">
         </a>
+
+        <nav>
+            <div>
+                <ul>
+                    <li><a class="button white-text" href="index.php">Home</a></li>
+                    <li><a class="button white-text" href="accommodation.php">Accomodation</a></li>
+                    <li><a class="button white-text" href="rates.php">Rates</a></li>
+                    <li><a class="button white-text" href="contact.php">Contact Us</a></li>      
+                </ul>
+            </div>
+        </nav>
+
     </header>
     <hr>    
 
-    <body class="dark-background">
+    <body>
         <page class="light-bacgkround" size="A4">
             This is a receipt page
         </page>
