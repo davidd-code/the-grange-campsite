@@ -120,7 +120,7 @@ top_module("Booking", "booking-image", "", "button-primary", "", "");
     <p>
     <p>Includes GST: 
         <?php
-
+            echo $totalPrice / 10;
         ?>
     <p>
 
