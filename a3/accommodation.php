@@ -206,7 +206,7 @@ top_module("Accommodation", "accommodation-background", "", "button-primary", ""
             <span class="white-text">Includes GST: $</span>
             <span id="GST" class="white-text"></span>
             
-            <div><button id="accom-button" type="submit" value="submit" >Book</button></div>
+            <div><button onload="disableBook()" id="accom-button" type="submit" value="submit" >Book</button></div>
         </form>
     </div>
 </div>
