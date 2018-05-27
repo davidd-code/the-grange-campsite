@@ -53,10 +53,6 @@ top_module("Booking", "booking-image", "", "button-primary", "", "");
     <p>Number of Children: <?php echo $_SESSION['booking']['children']?></p>
     <p>Total Price: 
         <?php
-            $pricePerDay = 0;
-            $totalPrice = 0;
-            $GST = 0;
-
             function calculateTotal($aid, $days, $adults, $children)    {
                     
                     $priceBook['cost'] = array (
@@ -87,7 +83,9 @@ top_module("Booking", "booking-image", "", "button-primary", "", "");
                         )
                     );
                     
-
+                    $pricePerDay = 0;
+                    $totalPrice = 0;
+                    global $GST = 0;
                     $totalPeople = $adults + $children;
                     
                     if(strcmp($aid, "C") == 0)  {
