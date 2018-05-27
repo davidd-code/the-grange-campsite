@@ -44,7 +44,8 @@ top_module("Accommodation", "accommodation-background", "", "button-primary", ""
             <li>Linen and towels</li>
             <li>Portable outdoor fire pit</li>
             <li>Portable speaker</li>
-        </ul> 
+        </ul>
+        Price: $35.25/night * 
         </p>
 </div>
 
@@ -67,6 +68,7 @@ top_module("Accommodation", "accommodation-background", "", "button-primary", ""
         <li>Small kitchen</li>
         <li>TV in living area</li>
     </ul>
+    Price: $50.25/night * 
     </p>
 </div>
 
@@ -86,6 +88,7 @@ top_module("Accommodation", "accommodation-background", "", "button-primary", ""
         <li>Plates, crockery and cutlery</li>
         <li>Linen and towels</li>
     </ul>
+    Price: $40.50/night * 
     </p>
 </div>
 
@@ -111,6 +114,7 @@ top_module("Accommodation", "accommodation-background", "", "button-primary", ""
         <li>Extra outdoor chairs</li>
         <li>TV in living area</li>
     </ul>
+    Price: $60.50/night * 
     </p>
 </div>
 
@@ -129,6 +133,7 @@ top_module("Accommodation", "accommodation-background", "", "button-primary", ""
         <li>Wine glasses, plates, crockery and cutlery</li>
         <li>Extra amenities available upon request</li>
     </ul>
+    Price: $100.00/night * 
     </p>
 </div>
 
