@@ -203,6 +203,10 @@ p {
 	text-align:center;
 }
 
+hr {
+	margin-top:2px;
+}
+
 .text-left {
 	text-align:left;
 }
