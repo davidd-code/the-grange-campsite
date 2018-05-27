@@ -31,12 +31,16 @@
 	padding-bottom:30%;
 }
 
-/* background image for home page */
+/* background image for booking page */
 .booking-image {
 	background: url("../media/booking.jpg");
 	background-repeat:no-repeat;
 	background-size:cover;
     padding-bottom:15%;
+}
+
+.receipt-header	{
+	padding-bottom:10%;
 }
 
 /* Top left logo image */
@@ -272,6 +276,11 @@ button {
     border:none;
     padding-left:5em;
     padding-right:5em;
+}
+
+page[size="A4"]	{
+	width:21cm;
+	height:29.7cm;
 }
 
 @media print {
