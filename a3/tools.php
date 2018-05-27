@@ -93,14 +93,20 @@ FOOTER;
                     <details open>
                         <summary>=Debug Show/Hide</summary>
                         <pre>
-                            print_r($_SESSION);
-
-
-
-                        </pre>
-                    </details>
-                </aside>  
 DEBUG;
         echo $html;
+        echo '$_SESSION contains'.print_r($_SESSION);
+        echo '$_POST contains'.print_r($_POST);
     }
+
+    function debug_bot_module() {
+        $html = <<<"BOT"
+
+                    </pre>
+                </details>
+            </aside>  
+BOT;
+        echo $html;
+    }
+
 ?>
