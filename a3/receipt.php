@@ -65,8 +65,8 @@ require_once("tools.php");
     </header>
     <hr>    
 
-    <body>
-        <page class="light-bacgkround" size="A4">
+    <body class="dark-background">
+        <page size="A4">
             This is a receipt page
         </page>
     </body>
